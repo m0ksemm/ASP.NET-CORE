@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "8wylLw4YCSj6ubRK67smWzhqmXdFgZwNfA6uoR++Klc=",
+  "Source": "StaticFields",
+  "BasePath": "_content/StaticFields",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StaticFields\\wwwroot",
+      "Source": "StaticFields",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StaticFields\\StaticFields\\wwwroot\\",
+      "BasePath": "_content/StaticFields",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFields", "StaticFields\StaticFields.csproj", "{0A90D774-6DF8-4694-A672-58E1B461E888}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A90D774-6DF8-4694-A672-58E1B461E888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A90D774-6DF8-4694-A672-58E1B461E888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A90D774-6DF8-4694-A672-58E1B461E888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A90D774-6DF8-4694-A672-58E1B461E888}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCC2DA45-86D0-4BFC-95CA-F7AE0E036BAD}
+	EndGlobalSection
+EndGlobal
