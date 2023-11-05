@@ -16,9 +16,15 @@
             {
                 int number = Convert.ToInt32(token);
                 number = Math.Abs(number);
-                if(number == 10)
+                if (number == 10)
                 {
                     await context.Response.WriteAsync("Your number is ten");
+                }
+                else if (number % 100 == 10) 
+                {
+                    string? result = string.Empty;
+                    result = context.Session.GetString("number");
+                    await context.Response.WriteAsync("Your number is " + result + " ten");
                 }
                 else
                 {
@@ -26,10 +32,10 @@
                     if (number > 10)
                         result = context.Session.GetString("number");
                     number %= 10;
-                    string[] Numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-                    if(number>0)
+                    string[] Numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+                    if (number > 0)
                     {
-                        await context.Response.WriteAsync("Your number is " + result + " " + Numbers[number-1]);
+                        await context.Response.WriteAsync("Your number is " + result + " " + Numbers[number - 1]);
                     }
                     else
                         await context.Response.WriteAsync("Your number is " + result);

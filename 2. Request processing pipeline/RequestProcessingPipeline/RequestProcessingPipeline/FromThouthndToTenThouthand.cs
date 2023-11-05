@@ -18,11 +18,6 @@ namespace RequestProcessingPipeline
         public async Task Invoke(HttpContext context)
         
         {
-            string result = string.Empty;
-            context.Session.SetString("number", "");
-
-
-
             string? token = context.Request.Query["number"];
             try
             {
@@ -35,6 +30,10 @@ namespace RequestProcessingPipeline
                 else if (number == 10000)
                 {
                     await context.Response.WriteAsync("Your number is ten thouthands");
+                }
+                else if (number > 10000)
+                {
+                    await _next.Invoke(context);
                 }
                 else
                 {
