@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MLp6wji5X0bmtk4y5oLGxUT5au9YhOkMG7RzITE2c8E=",
+  "Source": "RequestProcessingPipeline",
+  "BasePath": "_content/RequestProcessingPipeline",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
