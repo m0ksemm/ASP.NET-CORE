@@ -29,11 +29,32 @@ namespace RequestProcessingPipeline
                 {
                     await context.Response.WriteAsync("Your number is one thouthand");
                 }
+                else if (number > 1000)
+                {
+                    string? result = string.Empty;
+                    result = context.Session.GetString("number");
+                    number %= 1000;
+                    if (number > 99)
+                    {
+                        number /= 100;
+                        string[] Numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+                        context.Session.SetString("number", result + " " + Numbers[number - 1] + " hundred");
+
+                        await _next.Invoke(context);
+                    }
+                    else 
+                    {
+                        await _next.Invoke(context);
+                    }
+                    
+                }
                 else
                 {
+                    string? result = string.Empty;
+                    result = context.Session.GetString("number");
                     number /= 100;
                     string[] Numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-                    context.Session.SetString("number", Numbers[number - 1] + " hundred");
+                    context.Session.SetString("number", result + " " + Numbers[number - 1] + " hundred");
 
                     await _next.Invoke(context);
                 }

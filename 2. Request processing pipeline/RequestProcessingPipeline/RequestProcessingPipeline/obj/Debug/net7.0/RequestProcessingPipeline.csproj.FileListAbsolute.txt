@@ -76,3 +76,29 @@ C:\Users\User\Desktop\2. Request processing pipeline\RequestProcessingPipeline\R
 C:\Users\User\Desktop\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.pdb
 C:\Users\User\Desktop\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.genruntimeconfig.cache
 C:\Users\User\Desktop\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\ref\RequestProcessingPipeline.dll
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\appsettings.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\RequestProcessingPipeline.exe
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\RequestProcessingPipeline.deps.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\RequestProcessingPipeline.runtimeconfig.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\RequestProcessingPipeline.dll
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\bin\Debug\net7.0\RequestProcessingPipeline.pdb
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.AssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets\msbuild.RequestProcessingPipeline.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets\msbuild.build.RequestProcessingPipeline.props
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RequestProcessingPipeline.props
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RequestProcessingPipeline.props
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\scopedcss\bundle\RequestProcessingPipeline.styles.css
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.dll
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\refint\RequestProcessingPipeline.dll
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.pdb
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\RequestProcessingPipeline.genruntimeconfig.cache
+C:\Users\User\Desktop\ASP.NET Core\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net7.0\ref\RequestProcessingPipeline.dll

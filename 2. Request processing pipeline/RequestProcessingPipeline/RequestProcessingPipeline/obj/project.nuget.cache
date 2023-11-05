@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nOZafpC2kcC/T90T6bZUcqWBQxvyCmtGqvtj8wv4+3XRuMxG+nf1FZZJbe6mKfnjBHWlr+XquBgmZvt3ScX8fQ==",
+  "dgSpecHash": "HKPfl46WtG7OTFFEjWxXc2J05Kg/jLSlfwK7W16jMZgFgJM7Eidw8y9JxEqHsIPGKOzYCm6oWa3hpssTIsZJNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

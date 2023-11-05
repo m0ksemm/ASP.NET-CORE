@@ -26,7 +26,8 @@ namespace RequestProcessingPipeline
                 {
                     if (number > 100)
                         number %= 100;
-
+                    //if (number > 1000)
+                    //    number %= 1000;
                     string? result = string.Empty;//
                     result = context.Session.GetString("number");//
                     string[] Numbers = { "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };

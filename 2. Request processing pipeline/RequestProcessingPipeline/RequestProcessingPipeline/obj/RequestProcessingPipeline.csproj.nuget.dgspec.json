@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj": {}
+    "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj": {
+    "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
         "projectName": "RequestProcessingPipeline",
-        "projectPath": "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\2. Request processing pipeline\\RequestProcessingPipeline\\RequestProcessingPipeline\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
