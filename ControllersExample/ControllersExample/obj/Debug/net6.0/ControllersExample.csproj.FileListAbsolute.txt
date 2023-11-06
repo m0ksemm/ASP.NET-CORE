@@ -1,0 +1,53 @@
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.exe
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.deps.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.runtimeconfig.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.dll
+C:\Users\User\Desktop\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.pdb
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.AssemblyInfo.cs
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.ControllersExample.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.build.ControllersExample.props
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ControllersExample.props
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ControllersExample.props
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\scopedcss\bundle\ControllersExample.styles.css
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.dll
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\refint\ControllersExample.dll
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.pdb
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.genruntimeconfig.cache
+C:\Users\User\Desktop\ControllersExample\ControllersExample\obj\Debug\net6.0\ref\ControllersExample.dll
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.exe
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.deps.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.runtimeconfig.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.dll
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.pdb
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.AssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.ControllersExample.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.build.ControllersExample.props
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ControllersExample.props
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ControllersExample.props
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\scopedcss\bundle\ControllersExample.styles.css
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.dll
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\refint\ControllersExample.dll
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.pdb
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.genruntimeconfig.cache
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\obj\Debug\net6.0\ref\ControllersExample.dll
+C:\Users\User\Desktop\ASP.NET Core\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.staticwebassets.runtime.json
