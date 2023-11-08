@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TZTnsJRqQV1R/dp8IANjBOFJnlYSB4ezaNBQKmMftvo=",
+  "Hash": "yjcvmGZwe0zc/JtKrdJf+WRaVdXKVMzbpLwpwIK921I=",
   "Source": "IActionResultExample",
   "BasePath": "_content/IActionResultExample",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "IActionResultExample\\wwwroot",
       "Source": "IActionResultExample",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\wwwroot\\",
       "BasePath": "_content/IActionResultExample",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\wwwroot\\Sample.pdf",
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\wwwroot\\Sample.pdf",
       "SourceId": "IActionResultExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\wwwroot\\",
       "BasePath": "_content/IActionResultExample",
       "RelativePath": "Sample.pdf",
       "AssetKind": "All",

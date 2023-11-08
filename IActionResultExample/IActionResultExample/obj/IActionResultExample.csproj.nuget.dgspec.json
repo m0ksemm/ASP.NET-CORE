@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj": {}
+    "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj": {
+    "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj",
         "projectName": "IActionResultExample",
-        "projectPath": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\IActionResultExample.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\IActionResultExample\\IActionResultExample\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\IActionResultExample\\IActionResultExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
