@@ -1,48 +1,36 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using IActionResultExample.Models;
 using System;
 
 namespace IActionResultExample.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("book")]
-        public IActionResult Index()
+        [Route("bookstore/{bookid?}/{isloggedin?}")]
+        public IActionResult Index([FromQuery]int? bookid, [FromRoute]bool? isloggedin, Book book)
         {
             //Book id should be applied
-            if (!Request.Query.ContainsKey("bookid"))
+            if (bookid.HasValue == false)
             {
-                Response.StatusCode = 400;
-                return Content("Book id is not supplied");
+                return Content("Book id is not supplied or emty");
             }
-
-            //Book id can't be empty
-            if (string.IsNullOrEmpty(Convert.ToString(Request.Query["bookid"]))) 
+ 
+            if (bookid <= 0) 
             {
-                return BadRequest("Book id can't be null or empty");
+                return NotFound("Book id can't be less than or equal to zero");
             }
-
-            //Book id should be between 1 to 1000
-            int bookId = Convert.ToInt32(ControllerContext.HttpContext.Request.Query["bookid"]);
-            if (bookId <= 0)
-            {
-                return BadRequest("Book id can't be less than or equal zero");
-            }
-            if (bookId > 1000) 
+            if (bookid > 1000)
             {
                 return NotFound("Book id can't be greater than 1000");
             }
 
             //isloggedin should be true
-            if (Convert.ToBoolean(Request.Query["isloggedin"]) == false) 
+            if (isloggedin == false) 
             {
-                //return Unauthorized("User must be authenticated");
                 return StatusCode(401);
             }
 
-            //return File("/sample.pdf", "application/pdf");
-            return new RedirectToActionResult("Books", "Store", new { }, true);
-
+            return Content($"Book id: {bookid}, Book: {book}", "text/plain");
         }
     }
 }
---
