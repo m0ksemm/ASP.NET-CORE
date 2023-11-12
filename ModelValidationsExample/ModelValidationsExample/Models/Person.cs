@@ -52,7 +52,7 @@ namespace ModelValidationsExample.Models
 
         public override string ToString()
         {
-            return $"Persin object - Person name:{PersonName}, " +
+            return $"Person object - Person name:{PersonName}, " +
                 $"Email: {Email}, Phone: {Phone}, Password: {Password} " +
                 $"Confirm Password {ConfirmPassword}, Price: {Price}";
         }
