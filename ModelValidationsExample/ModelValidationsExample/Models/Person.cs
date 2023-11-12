@@ -37,7 +37,7 @@ namespace ModelValidationsExample.Models
 
         //[MinimumYearValidator(2005, ErrorMessage = "Date of Birth should not be newer than Jan 01, {0}")]
         [MinimumYearValidator(2005)]
-        [BindNever]
+        //[BindNever]
         public DateTime? DateOfBirth { get; set; }
 
 
@@ -47,6 +47,8 @@ namespace ModelValidationsExample.Models
         public DateTime? ToDate { get; set; }
 
         public int? Age { get; set; }
+
+        public List<string?> Tags { get; set; } = new List<string?>();
 
         public override string ToString()
         {
