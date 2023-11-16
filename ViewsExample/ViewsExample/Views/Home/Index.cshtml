@@ -1,11 +1,27 @@
 ﻿@using ViewsExample.Models
 @{
     string appTitle = "Asp.Net Core App";
-    Person person = new Person() { Name = "John", DateOfBirth = null, PersonGender = Gender.Female };
-    //Convert.ToDateTime("2000-07-01")};
+    List<Person> people = new List<Person>()
+    {
+        new Person() {Name = "John", DateOfBirth = DateTime.Parse("2000-05-06"), PersonGender = Gender.Male}, 
+        new Person() {Name = "Linda", DateOfBirth = DateTime.Parse("2005-01-09"), PersonGender = Gender.Female},
+        new Person() {Name = "Susan", DateOfBirth = DateTime.Parse("2008-07-12"), PersonGender = Gender.Other}
+    };
 }
-    
-
+@{
+    //local function
+    double? GetAge(DateTime? DateOfBirth)
+    {
+        if (DateOfBirth is not null)
+        {
+            return Math.Round((DateTime.Now - DateOfBirth.Value).TotalDays / 365.25);
+        }
+        else 
+        {
+            return null;
+        }
+    }
+}
 <!DOCTYPE>
 <html>
     <head>
@@ -14,37 +30,21 @@
     </head>
     <body>
         <h1>Welcome</h1>
-        <h2>Hello @person.Name</h2>
-    @if (person.DateOfBirth.HasValue)
-    {
-        double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365.25);
-        <h3>@age years old</h3>
-    }
-    else
-    {
-        <h3>Date of birth is unknown</h3>
-    }
-
-    @switch (person.PersonGender)
-    {
-        case Gender.Male:
-            <p>November 19 is International Men's Day</p>
-            ;
-            break;
-
-        case Gender.Female:
-            <p>Match 8 is International Women's Day </p>
-            ;
-            break;
-
-        case Gender.Other:
-            <p>Match 31 is International Transgender's Day </p>
-            ;
-            break;
-    }
-    @{
-            
+        @for (int i = 0; i < 2; i++)
+        {
+        Person person = people[i];
+        @:Hello to 
+        <div>
+                @person.Name 
+                <span>, </span>
+                <span>@person.PersonGender</span>
+                @if (person.DateOfBirth != null)
+                {
+                    <span>@person.DateOfBirth.Value.ToString("MM/dd/yyyy")</span>
+                    <span>@GetAge(person.DateOfBirth) years old</span>
+                }
+            </div>
         }
-       
+    
     </body>
 </html>
