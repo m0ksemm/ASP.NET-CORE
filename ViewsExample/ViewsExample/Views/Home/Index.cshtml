@@ -1,50 +1,44 @@
-﻿@using ViewsExample.Models
-@{
-    string appTitle = "Asp.Net Core App";
-    List<Person> people = new List<Person>()
-    {
-        new Person() {Name = "John", DateOfBirth = DateTime.Parse("2000-05-06"), PersonGender = Gender.Male}, 
-        new Person() {Name = "Linda", DateOfBirth = DateTime.Parse("2005-01-09"), PersonGender = Gender.Female},
-        new Person() {Name = "Susan", DateOfBirth = DateTime.Parse("2008-07-12"), PersonGender = Gender.Other}
-    };
-}
-@{
-    //local function
-    double? GetAge(DateTime? DateOfBirth)
-    {
-        if (DateOfBirth is not null)
-        {
-            return Math.Round((DateTime.Now - DateOfBirth.Value).TotalDays / 365.25);
-        }
-        else 
-        {
-            return null;
-        }
-    }
-}
+﻿@model IEnumerable<Person>
+
 <!DOCTYPE>
 <html>
     <head>
-        <title>@appTitle</title>
+        <title>@ViewBag.appTitle</title>
         <meta charset="utf-8" />
+        <link href="~/StyleSheet.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Welcome</h1>
-        @for (int i = 0; i < 2; i++)
-        {
-        Person person = people[i];
-        @:Hello to 
-        <div>
-                @person.Name 
-                <span>, </span>
-                <span>@person.PersonGender</span>
-                @if (person.DateOfBirth != null)
-                {
-                    <span>@person.DateOfBirth.Value.ToString("MM/dd/yyyy")</span>
-                    <span>@GetAge(person.DateOfBirth) years old</span>
-                }
+        <div calss = "page-content">
+            <h1>Persons</h1>
+            @foreach (Person person in Model)
+            {
+                <div class="box float-left w-50">
+                    <h3>@person.Name</h3>
+                    <table class="table w-100">
+                        <tbody>
+                            <tr>
+                                <td> Gender </td>
+                                <td> @person.PersonGender </td>
+                            </tr>
+                            <tr>
+                                <td>Date of birth</td>
+                            <td>@person.DateOfBirth?.ToString("MM/dd/yyyy")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <a href="/person-details/@person.Name">Details</a>
+                    </div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            }
+            <div>
+                <a href="/person-with-product">Person with Product</a>
             </div>
-        }
+        </div>
     
     </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CbhTElw/24OpghZqPZQEiY7G80QiRjBVq1K59Z45zAQ=",
+  "Hash": "JO+ESNPmtX4H3xb/2XoJCL0wglNmxPeEUFWZ+4Ie6oc=",
   "Source": "ViewsExample",
   "BasePath": "_content/ViewsExample",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ViewsExample\\ViewsExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "ViewsExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ViewsExample\\ViewsExample\\wwwroot\\",
+      "BasePath": "_content/ViewsExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
 }
