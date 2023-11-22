@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "2DaKCWm+v78AX7u1OFfvDgemI781t8feq6i7chCVOIM=",
+  "Source": "Weather",
+  "BasePath": "_content/Weather",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Weather\\wwwroot",
+      "Source": "Weather",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Weather\\Weather\\wwwroot\\",
+      "BasePath": "_content/Weather",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Weather\\Weather\\wwwroot\\StyleSheet.css",
+      "SourceId": "Weather",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Weather\\Weather\\wwwroot\\",
+      "BasePath": "_content/Weather",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
