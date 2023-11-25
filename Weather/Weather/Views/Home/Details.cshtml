@@ -1,4 +1,8 @@
-﻿@model WeatherInfo
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model WeatherInfo
 
 @functions {
     //method
@@ -23,34 +27,23 @@
     string Name { get; set; } = "Hello name";
 }
 
-<!DOCTYPE>
-<html>
-<head>
-    <title>@ViewBag.appTitle</title>
-    <meta charset="utf-8" />
-    <link href="~/StyleSheet.css" rel="stylesheet" />
-</head>
-<body>
-    <span class="spanType1">Weather</span>
-    <div class="container2">
-        <div class="containerItem">
-            <table>
-                <tr>
-                    <td class="rightBorder">
-                        <span class="spanType2"> @Model.CityName </span>
-                        <span class="spanType3"> @Model.DateAndTime?.ToString("dd/mm/yyyy") <br></span>
-                        <span class="spanType3"> @Model.DateAndTime?.ToString("hh:mm tt") <br></span>
-                    </td>
-                    <td>
-                        <span class="spanType1"> @Model.TemperatureFahrenheit </span>
-                        <span class="spanType4">&#xB0;F</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <a href="/home">Back to Weather Home Page</a>
-        </div>
+<div class="container2">
+    <div class="containerItem">
+        <table>
+            <tr>
+                <td class="rightBorder">
+                    <span class="spanType2"> @Model.CityName </span>
+                    <span class="spanType3"> @Model.DateAndTime?.ToString("dd/mm/yyyy") <br></span>
+                    <span class="spanType3"> @Model.DateAndTime?.ToString("hh:mm tt") <br></span>
+                </td>
+                <td>
+                    <span class="spanType1"> @Model.TemperatureFahrenheit </span>
+                    <span class="spanType4">&#xB0;F</span>
+                </td>
+            </tr>
+        </table>
     </div>
-</body>
-</html>
+    <div>
+        <a href="/home">Back to Weather Home Page</a>
+    </div>
+</div>

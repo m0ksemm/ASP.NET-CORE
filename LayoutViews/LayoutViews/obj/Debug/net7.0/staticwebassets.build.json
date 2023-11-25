@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "tA7hmQ03DDYdODZVCq/1FiwzAY2ejJvAe2XyJfooCzU=",
+  "Source": "LayoutViews",
+  "BasePath": "_content/LayoutViews",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LayoutViews\\wwwroot",
+      "Source": "LayoutViews",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\LayoutViews\\LayoutViews\\wwwroot\\",
+      "BasePath": "_content/LayoutViews",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\LayoutViews\\LayoutViews\\wwwroot\\StyleSheet.css",
+      "SourceId": "LayoutViews",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\LayoutViews\\LayoutViews\\wwwroot\\",
+      "BasePath": "_content/LayoutViews",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

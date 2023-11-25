@@ -1,4 +1,9 @@
-﻿@model IEnumerable<WeatherInfo>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model IEnumerable<WeatherInfo>
 
 @functions {
     //method
@@ -23,35 +28,24 @@
     string Name { get; set; } = "Hello name";
 }
 
-<!DOCTYPE>
-<html>
-<head>
-    <title>@ViewBag.appTitle</title>
-    <meta charset="utf-8" />
-    <link href="~/StyleSheet.css" rel="stylesheet" />
-</head>
-<body>
-    <span class="spanType1">Weather</span>
-    <div class="container">
-        @foreach (WeatherInfo w in Model)
-        {
-            <div class="containerItem @SetColor(w.TemperatureFahrenheit)">
-                <table>
-                    <tr>
-                        <td class="rightBorder">
-                            <span class="spanType2"> @w.CityName </span>
-                            <span class="spanType3"> @w.DateAndTime?.ToString("hh:mm tt") <br></span>
-                            <a href="/weather/@w.CityUniqueCode">Details</a>
-                        </td>
-                        <td>
-                            <span class="spanType1"> @w.TemperatureFahrenheit </span>
-                            <span class="spanType4">&#xB0;F</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        }
-        
-    </div>
-</body>
-</html>
+<div class="container">
+    @foreach (WeatherInfo w in Model)
+    {
+        <div class="containerItem @SetColor(w.TemperatureFahrenheit)">
+            <table>
+                <tr>
+                    <td class="rightBorder">
+                        <span class="spanType2"> @w.CityName </span>
+                        <span class="spanType3"> @w.DateAndTime?.ToString("hh:mm tt") <br></span>
+                        <a href="/weather/@w.CityUniqueCode">Details</a>
+                    </td>
+                    <td>
+                        <span class="spanType1"> @w.TemperatureFahrenheit </span>
+                        <span class="spanType4">&#xB0;F</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    }
+
+</div>
