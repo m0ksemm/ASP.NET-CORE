@@ -5,47 +5,10 @@
 
 @model IEnumerable<WeatherInfo>
 
-@functions {
-    //method
-    string? SetColor(int? temperature)
-    {
-        if (temperature is not null)
-        {
-            if (temperature < 44)
-                return "blue";
-            else if (temperature >= 44 && temperature <= 74)
-                return "salad";
-            else return "golden";
-        }
-        else
-        {
-            return null;
-        }
-    }
-
-    int x = 10;
-
-    string Name { get; set; } = "Hello name";
-}
-
 <div class="container">
     @foreach (WeatherInfo w in Model)
     {
-        <div class="containerItem @SetColor(w.TemperatureFahrenheit)">
-            <table>
-                <tr>
-                    <td class="rightBorder">
-                        <span class="spanType2"> @w.CityName </span>
-                        <span class="spanType3"> @w.DateAndTime?.ToString("hh:mm tt") <br></span>
-                        <a href="/weather/@w.CityUniqueCode">Details</a>
-                    </td>
-                    <td>
-                        <span class="spanType1"> @w.TemperatureFahrenheit </span>
-                        <span class="spanType4">&#xB0;F</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <partial name="_CityPartialView" model="w" />
     }
 
 </div>
