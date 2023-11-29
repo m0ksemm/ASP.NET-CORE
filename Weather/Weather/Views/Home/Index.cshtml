@@ -5,10 +5,11 @@
 
 @model IEnumerable<WeatherInfo>
 
+
 <div class="container">
     @foreach (WeatherInfo w in Model)
     {
-        <partial name="_CityPartialView" model="w" />
+        @await Component.InvokeAsync("City", new { weatherInfo = w })
     }
 
 </div>
