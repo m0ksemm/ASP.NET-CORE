@@ -1,0 +1,39 @@
+﻿@model Movie
+
+<div class="container">
+
+    <a asp-action="Index"> <input type="button" class="buttons" value="Back to the list"> </a>
+
+    <form asp-action="Add" method="post" enctype="multipart/form-data">
+        <div class="movie">
+            <div class="w-30">
+                <img src="@Url.Content(Model.PicturePath)" class="pict">
+                <input name="uploadedFile" type="file" class="text" />
+                <input asp-for="PicturePath" hidden />
+            </div>
+            <div class="info w-70">
+                <div class="movieName">
+                    <span>Movie title: </span>
+                    <br />
+                    <input asp-for="Title" class="text w98" />
+                </div>
+                <div class="movieName margtop20">
+                    <span>Genre: </span>
+                    <br />
+                    <input asp-for="Genre" class="text w98" />
+                </div>
+                <div class="movieName margtop20 ">
+                    <span>Release date: </span>
+                    <br />
+                    <input asp-for="ReleaseDate" class="text w95" />
+                </div>
+                <div class="movieName margtop20 fitcont">
+                    <span>Description: </span>
+                    <br />
+                    <textarea asp-for="Description" rows="5" class="extra" cols="40"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Save" class="buttons" />
+    </form>
+</div>

@@ -1,0 +1,30 @@
+﻿@model Movie
+
+<div class="container">
+
+    <a asp-action="Index"> <input type="button" class="buttons" value="Back to the list"> </a>
+
+    <form asp-action="Remove" method="post" enctype="multipart/form-data">
+        <div class="movie">
+            <div class="pic w-30">
+                <img src="@Url.Content(Model.PicturePath)" class="pict">
+            </div>
+            <div class="info w-70">
+                <div class="movieName">
+                    @Html.DisplayFor(modelItem => Model.Title)
+                </div>
+                <h2>@Html.DisplayFor(modelItem => Model.Genre)</h2>
+                <h2>@Html.DisplayFor(modelItem => Model.ReleaseDate)</h2>
+                <div class="about2">
+                    @Html.DisplayFor(modelItem => Model.Description)
+                </div>
+                <div class="movieName margtop20">
+                    Remove this movie from the list?
+                </div>
+                <input type="submit" value="Remove" class="buttons w-350 margtop20" />
+            </div>
+        </div>
+        
+    </form>
+
+</div>

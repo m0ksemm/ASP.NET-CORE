@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\aqua.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\aqua.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\napoleon.jpeg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\napoleon.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\noimg.png",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\noimg.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\nowh.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\nowh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\oppen.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\oppen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\pxs.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\pxs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\run.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\run.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\sharp.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\sharp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\shift.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\shift.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\wish.jpeg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\wish.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\wonka.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\wonka.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\css\\Styles.css",
+      "PackagePath": "staticwebassets\\css\\Styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Topmovies.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Topmovies.props",
+      "PackagePath": "build\\Topmovies.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Topmovies.props",
+      "PackagePath": "buildMultiTargeting\\Topmovies.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Topmovies.props",
+      "PackagePath": "buildTransitive\\Topmovies.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

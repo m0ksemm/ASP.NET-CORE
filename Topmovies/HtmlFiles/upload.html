@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Styles.css" />
+    
+    <style>
+        .extra {
+            width: 600px;
+            min-width: 400px;
+            max-width: 700px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+        }
+        .text {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            width: 98%;
+        }
+        .widthcont {
+            width: fit-content;
+        }
+        .margtop20 {
+            margin-top: 20px;
+        }
+        .fitcont {
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <input type="button" class="buttons" value="Back to the list">
+        </form>
+        
+
+
+        <form>
+            <div class="movie">
+                <div class="w-30">
+                    <input type="file" name="uploadedFile" /><br>
+                    <input type="submit" value="Upload" />   
+
+                </div>
+                <div class="info w-70">
+                    <div class="movieName">
+                        <span>Movie title: </span>
+                        <input type="text" class="text">
+                    </div>
+                    <div class="movieName margtop20">
+                        <span>Genre: </span>
+                        <input type="text" class="text">
+                    </div>
+                    <div class="movieName margtop20">
+                        <span>Release date: </span>
+                        <input type="text" class="text">
+                    </div>
+                    <div class="movieName margtop20 fitcont">
+                        <span>Description: </span>
+                        <textarea name="text_info" class="extra" cols="20" rows="5"></textarea>
+            
+                    </div>
+                </div>
+            </div >
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+

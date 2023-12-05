@@ -1,0 +1,24 @@
+﻿@model Movie
+
+<div class="movie">
+    <div class="pic w-30">
+        <img src="@Url.Content(Model.PicturePath)" class="pict">
+    </div>
+    <div class="info w-50">
+        <div class="movieName">
+            @Html.DisplayFor(modelItem => Model.Title)
+        </div>
+        <h2>@Html.DisplayFor(modelItem => Model.Genre)</h2>
+        <h2>@Html.DisplayFor(modelItem => Model.ReleaseDate)</h2>
+        <div class="about">
+            @Html.DisplayFor(modelItem => Model.Description)
+        </div>
+    </div>
+    <div class="actions w-20">
+        <a asp-action="Edit" asp-route-id="@Model.Id"> <input type="button" class="buttons" value="Edit"> </a>
+        <br />
+        <a asp-action="Details" asp-route-id="@Model.Id"> <input type="button" class="buttons" value="View"> </a>
+        <br />
+        <a asp-action="Remove" asp-route-id="@Model.Id"> <input type="button" class="buttons" value="Remove"> </a>
+    </div>
+</div>

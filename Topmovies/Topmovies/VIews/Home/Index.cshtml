@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Topmovies.Models.Movie>
+
+<div class="container">
+    
+    <a asp-action="Add"> <input type="button" class="buttons" value="Add a new movie"> </a>
+
+    <div class="header">
+        10 Best Movies
+    </div>
+    @{
+        int i = 1;
+    }
+    @foreach (var item in Model) 
+    {
+        <div class="top">
+            @Convert.ToString(i++)
+        </div>
+        <partial name="_MoviePartialView" model="item"></partial>
+    }
+</div>
