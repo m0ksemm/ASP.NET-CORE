@@ -33,3 +33,5 @@ C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\obj\Debug\net8.0\DIExampl
 C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\obj\Debug\net8.0\ref\DIExample.dll
 C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\bin\Debug\net8.0\ServiceContracts.dll
 C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\bin\Debug\net8.0\ServiceContracts.pdb
+C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\bin\Debug\net8.0\Autofac.dll
+C:\Users\User\Desktop\ASP.NET Core\DIExample\DIExample\bin\Debug\net8.0\Autofac.Extensions.DependencyInjection.dll
