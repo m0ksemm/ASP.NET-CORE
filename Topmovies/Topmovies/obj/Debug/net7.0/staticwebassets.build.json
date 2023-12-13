@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mgUcw0aJEQpzuiaN2OxLSwfBitCFijXjMmh65E7CmgQ=",
+  "Hash": "N8VMKIfZrG8kW6ZdZedRxrXW8+dCiv8yC1A0zjyoO7o=",
   "Source": "Topmovies",
   "BasePath": "_content/Topmovies",
   "Mode": "Default",
@@ -53,6 +53,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\Pictures\\aqua.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\chap.jpg",
+      "SourceId": "Topmovies",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\",
+      "BasePath": "_content/Topmovies",
+      "RelativePath": "Files/Pictures/chap.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Pictures\\chap.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\fandf.jpg",
+      "SourceId": "Topmovies",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\",
+      "BasePath": "_content/Topmovies",
+      "RelativePath": "Files/Pictures/fandf.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Pictures\\fandf.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\napoleon.jpeg",
@@ -131,25 +169,6 @@
       "OriginalItemSpec": "wwwroot\\Files\\Pictures\\oppen.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\pxs.jpg",
-      "SourceId": "Topmovies",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\",
-      "BasePath": "_content/Topmovies",
-      "RelativePath": "Files/Pictures/pxs.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\Pictures\\pxs.jpg"
-    },
-    {
       "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\run.jpg",
       "SourceId": "Topmovies",
       "SourceType": "Discovered",
@@ -224,25 +243,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\Pictures\\wish.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\wonka.jpg",
-      "SourceId": "Topmovies",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\",
-      "BasePath": "_content/Topmovies",
-      "RelativePath": "Files/Pictures/wonka.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\Pictures\\wonka.jpg"
     }
   ]
 }

@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Files\\Pictures\\aqua.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\chap.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\chap.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\fandf.jpg",
+      "PackagePath": "staticwebassets\\Files\\Pictures\\fandf.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\napoleon.jpeg",
       "PackagePath": "staticwebassets\\Files\\Pictures\\napoleon.jpeg"
     },
@@ -21,10 +29,6 @@
       "PackagePath": "staticwebassets\\Files\\Pictures\\oppen.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\pxs.jpg",
-      "PackagePath": "staticwebassets\\Files\\Pictures\\pxs.jpg"
-    },
-    {
       "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\run.jpg",
       "PackagePath": "staticwebassets\\Files\\Pictures\\run.jpg"
     },
@@ -39,10 +43,6 @@
     {
       "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\wish.jpeg",
       "PackagePath": "staticwebassets\\Files\\Pictures\\wish.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\Files\\Pictures\\wonka.jpg",
-      "PackagePath": "staticwebassets\\Files\\Pictures\\wonka.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\ASP.NET Core\\Topmovies\\Topmovies\\wwwroot\\css\\Styles.css",
