@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "0cNrgcI2DCBTNAuX+Rwn99bQKBkfFM5DlHrJ/119rh4=",
+  "Source": "ConfigurationExample",
+  "BasePath": "_content/ConfigurationExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ConfigurationExample\\wwwroot",
+      "Source": "ConfigurationExample",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\wwwroot\\",
+      "BasePath": "_content/ConfigurationExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "ConfigurationExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\wwwroot\\",
+      "BasePath": "_content/ConfigurationExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
