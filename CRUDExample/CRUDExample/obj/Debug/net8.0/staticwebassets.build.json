@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Qfdb5y88tAKVCFPbzyBRQQkDqNz81oOqHiXeOr/jQLA=",
+  "Hash": "PD6WPwQ4DThXseceK0GhcK3NuoWx1ZU4THFTCPkGCnI=",
   "Source": "CRUDExample",
   "BasePath": "_content/CRUDExample",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CRUDExample\\wwwroot",
       "Source": "CRUDExample",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "StyleSheet.css",
       "AssetKind": "All",

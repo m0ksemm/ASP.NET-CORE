@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JqNDx1dxopAZ5/24UplGDDQJ9Y42xTWd/8WOYFBxYfwkhb/D217BMk6AHatlAawlId6rvZEDFIUTKpcPtXyfHQ==",
+  "dgSpecHash": "4DdnjFnXtVk/sM0FTLnAAAk+F3klDmeZrBHovXecCUzkxK4g0KcCAGcLp7dYLf4p/jFaooJaTswvO7ilMHGTVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

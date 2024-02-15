@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\Entities.csproj": {}
+    "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\Entities.csproj": {
+    "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\CRUDExample\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\CRUDExample\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
