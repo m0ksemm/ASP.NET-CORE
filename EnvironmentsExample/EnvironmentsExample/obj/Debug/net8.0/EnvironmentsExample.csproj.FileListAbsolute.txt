@@ -1,0 +1,58 @@
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.staticwebassets.runtime.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.exe
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.deps.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.runtimeconfig.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.pdb
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.AssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.sourcelink.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.EnvironmentsExample.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.build.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\scopedcss\bundle\EnvironmentsExample.styles.css
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\refint\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.pdb
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.genruntimeconfig.cache
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\ref\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.staticwebassets.runtime.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.exe
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.deps.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.runtimeconfig.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\bin\Debug\net8.0\EnvironmentsExample.pdb
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.AssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.sourcelink.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.EnvironmentsExample.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.build.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EnvironmentsExample.props
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\scopedcss\bundle\EnvironmentsExample.styles.css
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\refint\EnvironmentsExample.dll
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.pdb
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\EnvironmentsExample.genruntimeconfig.cache
+C:\Users\User\Desktop\ASP.NET_Core\EnvironmentsExample\EnvironmentsExample\obj\Debug\net8.0\ref\EnvironmentsExample.dll
