@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\StocksApp.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\StocksApp.csproj",
       "projectName": "StocksApp",
-      "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\StocksApp.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\StocksApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

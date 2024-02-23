@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JGAP358VUb4QKS1V/wc3p22xZzPE71RfwhmsKjDa/kjmu+BFO56HzfTDtAGehFgwzS5DSO94/GXF6XVpk5ygIA==",
+  "dgSpecHash": "SqAvBiKy4CM/mio5V+fb8XGgWrq1SSaXccHmc9kschb4PR3GXgy5k0rKP95UoecKfyzvIcKGfXYcYzJ+n4SfZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\StocksApp.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\StocksApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

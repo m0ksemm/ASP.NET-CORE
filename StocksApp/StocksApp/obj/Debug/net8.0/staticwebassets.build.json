@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a1Zrx0qPAx31A1St5DkJ2h3wZT0TGHNDB9cWjvKb1V0=",
+  "Hash": "FtDCXk2ZtDbhN1ba3vNprkX8zHf8Xa8Y+Uhrrn3PDt8=",
   "Source": "StocksApp",
   "BasePath": "_content/StocksApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StocksApp\\wwwroot",
       "Source": "StocksApp",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\wwwroot\\",
       "BasePath": "_content/StocksApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\wwwroot\\StyleSheet.css",
+      "Identity": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\wwwroot\\StyleSheet.css",
       "SourceId": "StocksApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET Core\\StocksApp\\StocksApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\StocksApp\\StocksApp\\wwwroot\\",
       "BasePath": "_content/StocksApp",
       "RelativePath": "StyleSheet.css",
       "AssetKind": "All",
