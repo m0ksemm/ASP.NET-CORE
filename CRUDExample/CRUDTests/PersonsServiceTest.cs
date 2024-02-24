@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using Xunit;
 using Xunit.Abstractions;
+using System.Linq;
 
 namespace CRUDTests
 {
@@ -276,6 +277,152 @@ namespace CRUDTests
                     }
                 }
             }
+        }
+        #endregion
+
+        #region GetSortedPersons
+
+        //When we sort based on PersonName in DESC, it should return persons list in descending on PersonName
+        [Fact]
+        public void GetSortedPersons()
+        {
+            //Arrange
+            CountryAddRequest country_request_1 = new CountryAddRequest() { CountryName = "USA" };
+            CountryAddRequest country_request_2 = new CountryAddRequest() { CountryName = "India" };
+
+            CountryResponse country_response_1 = _countriesService.AddCountry(country_request_1);
+            CountryResponse country_response_2 = _countriesService.AddCountry(country_request_2);
+
+            PersonAddRequest person_request_1 = new PersonAddRequest() { PersonName = "Smith", Email = "smith@email.com", Gender = GenderOptions.Male, Address = "address of smith", CountryID = country_response_1.CountryID, DateOfBirth = DateTime.Parse("2002-05-06"), ReceiveNewsLetters = true };
+            PersonAddRequest person_request_2 = new PersonAddRequest() { PersonName = "Mary", Email = "mary@email.com", Gender = GenderOptions.Female, Address = "address of mary", CountryID = country_response_2.CountryID, DateOfBirth = DateTime.Parse("2000-02-02"), ReceiveNewsLetters = false };
+            PersonAddRequest person_request_3 = new PersonAddRequest() { PersonName = "Rahman", Email = "rahman@email.com", Gender = GenderOptions.Male, Address = "address of rahman", CountryID = country_response_2.CountryID, DateOfBirth = DateTime.Parse("1999-03-03"), ReceiveNewsLetters = true };
+
+            List<PersonAddRequest> person_requests = new List<PersonAddRequest>() { person_request_1, person_request_2, person_request_3 };
+
+            List<PersonResponse> person_response_list_from_add = new List<PersonResponse>();
+
+            foreach (PersonAddRequest person_request in person_requests)
+            {
+                PersonResponse person_response = _personsService.AddPerson(person_request);
+                person_response_list_from_add.Add(person_response);
+            }
+
+            //print person_response_list_from_add
+            _testOutputHelper.WriteLine("Expected");
+            foreach (PersonResponse person_response_from_add in person_response_list_from_add)
+            {
+                _testOutputHelper.WriteLine(person_response_from_add.ToString());
+            }
+
+            List<PersonResponse> allPersons = _personsService.GetAllPersons();
+            //Act
+            List<PersonResponse> person_list_from_sort = _personsService.GetSortedPersons(allPersons, nameof(PersonResponse.PersonName), SortOrderOptions.DESC);
+
+            //print person_response_list_from_get
+            _testOutputHelper.WriteLine("Actual");
+            foreach (PersonResponse person_response_from_get in person_list_from_sort)
+            {
+                _testOutputHelper.WriteLine(person_response_from_get.ToString());
+            }
+            person_response_list_from_add = person_response_list_from_add.OrderByDescending(temp => temp.PersonName).ToList();
+
+            //Assert
+            for (int i = 0; i < person_response_list_from_add.Count; i++)
+            {
+                Assert.Equal(person_response_list_from_add[i], person_list_from_sort[i]);
+            }
+        }
+        #endregion
+
+        #region UpdatePerson
+
+        //When we supply null as PersonUpdateRequest, it should throw ArgumentNullException
+        [Fact]
+        public void UpdatePerson_NullPerson()
+        {
+            //Arrange
+            PersonUpdateRequest person_update_request = null;
+
+            Assert.Throws<ArgumentNullException>(() =>
+            {
+                //Act
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+
+        //When we supply invalid person id, it should throw ArgumentException
+        [Fact]
+        public void UpdatePerson_InvalidPersonID()
+        {
+            //Arrange
+            PersonUpdateRequest person_update_request = new PersonUpdateRequest() { PersonID = Guid.NewGuid() };
+
+            //Assert
+            Assert.Throws<ArgumentNullException>(() =>
+            {
+                //Act
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+
+        //When PersonName is null, it should throw ArgumentException
+        [Fact]
+        public void UpdatePerson_PersonNameIsNull()
+        {
+            //Arrange
+            CountryAddRequest country_add_request = new CountryAddRequest() { CountryName = "UK" };
+            CountryResponse country_response_from_add = _countriesService.AddCountry(country_add_request);
+
+            PersonAddRequest person_add_request = new PersonAddRequest()
+            {
+                PersonName = "John", CountryID = country_response_from_add.CountryID
+            };
+            PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
+
+            PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
+            person_update_request.PersonName = null;
+
+
+            Assert.Throws<ArgumentException>(() =>
+            {
+                //Act
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+        // +Email Can Not Be Null
+        // ....
+
+        //First, add a new person and try to update the person name and email
+        [Fact]
+        public void UpdatePerson_PersonFullDetailsUpdate()
+        {
+            //Arrange
+            CountryAddRequest country_add_request = new CountryAddRequest() { CountryName = "UK" };
+            CountryResponse country_response_from_add = _countriesService.AddCountry(country_add_request);
+
+            PersonAddRequest person_add_request = new PersonAddRequest()
+            {
+                PersonName = "John",
+                CountryID = country_response_from_add.CountryID,
+                Address = "Some road 3",
+                DateOfBirth = DateTime.Parse("2000-01-01"), 
+                Email = "abc@example.com", 
+                Gender = GenderOptions.Male,
+                ReceiveNewsLetters = true
+            };
+            PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
+
+            PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
+            person_update_request.PersonName = "William";
+            person_update_request.Email = "william@example.com";
+
+            //Act
+            PersonResponse person_response_from_update = _personsService.UpdatePerson(person_update_request);
+
+            PersonResponse? person_response_from_get = _personsService.GetPersonByPersonID(person_response_from_update.PersonID);
+
+            //Assert
+            Assert.Equal(person_response_from_get, person_response_from_update);
         }
         #endregion
     }
