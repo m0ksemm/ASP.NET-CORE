@@ -52,3 +52,13 @@ C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\refi
 C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.pdb
 C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.genruntimeconfig.cache
 C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\ref\CRUDExample.dll
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Entities.dll
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\ServiceContracts.dll
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Services.dll
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Entities.pdb
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\ServiceContracts.pdb
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Services.pdb
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.csproj.CopyComplete

@@ -22,7 +22,7 @@ namespace CRUDTests
         public PersonsServiceTest(ITestOutputHelper testOutputHelper) 
         {
             _personsService = new PersonsService();
-            _countriesService = new CountriesService();
+            _countriesService = new CountriesService(false);
             _testOutputHelper = testOutputHelper;
         }
 
@@ -358,7 +358,7 @@ namespace CRUDTests
             PersonUpdateRequest person_update_request = new PersonUpdateRequest() { PersonID = Guid.NewGuid() };
 
             //Assert
-            Assert.Throws<ArgumentNullException>(() =>
+            Assert.Throws<ArgumentException>(() =>
             {
                 //Act
                 _personsService.UpdatePerson(person_update_request);
@@ -375,7 +375,8 @@ namespace CRUDTests
 
             PersonAddRequest person_add_request = new PersonAddRequest()
             {
-                PersonName = "John", CountryID = country_response_from_add.CountryID
+                PersonName = "John", CountryID = country_response_from_add.CountryID,
+                Email = "john@example.com", Address = "address...", Gender = GenderOptions.Male
             };
             PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
 
@@ -423,6 +424,51 @@ namespace CRUDTests
 
             //Assert
             Assert.Equal(person_response_from_get, person_response_from_update);
+        }
+        #endregion
+
+        #region DeletePerson
+
+        //If tou supply an valid PersonID, it should return true
+        [Fact]
+        public void DeletePerson_ValidPersonID()
+        {
+            //Arrange
+            CountryAddRequest country_add_request = new CountryAddRequest()
+            {
+                CountryName = "USA"
+            };
+            CountryResponse country_response_from_add = _countriesService.AddCountry(country_add_request);
+
+            PersonAddRequest person_add_request = new PersonAddRequest()
+            {
+                PersonName = "Jones",
+                Address = "address",
+                CountryID = country_response_from_add.CountryID,
+                DateOfBirth = Convert.ToDateTime("2010-01-01"),
+                Email = "jonse@example.com", 
+                Gender = GenderOptions.Male,
+                ReceiveNewsLetters = true
+            };
+
+            PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
+
+            //Act
+            bool isDeleted = _personsService.DeletePerson(person_response_from_add.PersonID);
+
+            //Assert
+            Assert.True(isDeleted);
+        }
+
+        //If tou supply an invalid PersonID, it should return false
+        [Fact]
+        public void DeletePerson_InvalidPersonID()
+        {
+            //Act
+            bool isDeleted = _personsService.DeletePerson(Guid.NewGuid());
+
+            //Assert
+            Assert.False(isDeleted);
         }
         #endregion
     }
