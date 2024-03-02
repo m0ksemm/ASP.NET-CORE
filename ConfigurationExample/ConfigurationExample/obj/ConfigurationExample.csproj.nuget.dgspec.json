@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj": {}
+    "C:\\Users\\User\\Desktop\\ASP.NET_Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj": {
+    "C:\\Users\\User\\Desktop\\ASP.NET_Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj",
         "projectName": "ConfigurationExample",
-        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\ConfigurationExample\\ConfigurationExample\\ConfigurationExample.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET Core\\ConfigurationExample\\ConfigurationExample\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ASP.NET_Core\\ConfigurationExample\\ConfigurationExample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
