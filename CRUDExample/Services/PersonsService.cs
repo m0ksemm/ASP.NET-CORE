@@ -23,7 +23,7 @@ namespace Services
 
             if (initialize)
             {
-
+                #region SampleDataAdd
                 _persons.Add(new Person()
                 {
                     PersonID = Guid.Parse("FCAE41CF-FE9E-4E43-B1D3-3CBE3C7A4604"),
@@ -143,6 +143,7 @@ namespace Services
                     ReceiveNewsLetters = false,
                     CountryID = Guid.Parse("779889D2-5863-40DF-A8D6-490DACC6EE17")
                 });
+                #endregion
             }
         }
 
@@ -179,7 +180,7 @@ namespace Services
 
         public List<PersonResponse> GetAllPersons()
         {
-            return _persons.Select(temp => temp.ToPersonResponse()).ToList();
+            return _persons.Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
         }
 
         public PersonResponse? GetPersonByPersonID(Guid? personID)
@@ -195,7 +196,7 @@ namespace Services
                 return null;
             }
 
-            return person.ToPersonResponse();
+            return ConvertPersonToPersonResponse(person);
         }
 
         public List<PersonResponse> GetFilteredPerson(string searchBy, string? searchString)
@@ -288,6 +289,9 @@ namespace Services
                 (nameof(PersonResponse.ReceiveNewsLetters), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.ReceiveNewsLetters).ToList(),
                 (nameof(PersonResponse.ReceiveNewsLetters), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.ReceiveNewsLetters).ToList(),
 
+                (nameof(PersonResponse.Gender), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.Gender).ToList(),
+                (nameof(PersonResponse.Gender), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.Gender).ToList(),
+
                 _ => allPersons
             };
 
@@ -320,7 +324,7 @@ namespace Services
             matchingPerson.Address = personUpdateRequest.Address;
             matchingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
 
-            return matchingPerson.ToPersonResponse();
+            return ConvertPersonToPersonResponse(matchingPerson);
         }
 
         public bool DeletePerson(Guid? personID)
