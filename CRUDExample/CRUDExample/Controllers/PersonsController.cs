@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
@@ -6,6 +7,7 @@ using System.Net;
 
 namespace CRUDExample.Controllers
 {
+    [Route("persons")]
     public class PersonsController : Controller
     {
         //private fields
@@ -19,7 +21,8 @@ namespace CRUDExample.Controllers
             _countriesService = countriesService;
         }
 
-        [Route("persons/index")]
+        //Url: persons/index
+        [Route("[action]")]
         [Route("/")]
         public IActionResult Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
         {
@@ -43,19 +46,24 @@ namespace CRUDExample.Controllers
             ViewBag.CurrentSortOrder = sortOrder.ToString();
             return View(sortedPersons); //Views/Persons/Index.cshtml
         }
-        
+
         //Executes when the user clicks on "Create Person" hyperlink (while opening the create view)
-        [Route("persons/create")]
+        //Url: persons/create
         [HttpGet]
+        [Route("create")]
         public IActionResult Create()
         {
             List<CountryResponse> countries = _countriesService.GetAllCountries();
-            ViewBag.Countries = countries;
+            ViewBag.Countries = countries.Select(temp => 
+                new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() }
+            );
+
             return View();
         }
 
+        //Url: persons/create
         [HttpPost]
-        [Route("persons/create")]
+        [Route("create")]
         public IActionResult Create(PersonAddRequest personAddRequest)
         {
             if (!ModelState.IsValid)
