@@ -34,3 +34,6 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\ne
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
