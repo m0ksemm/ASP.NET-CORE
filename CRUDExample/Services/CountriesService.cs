@@ -13,7 +13,6 @@ namespace Services
         public CountriesService(PersonsDbContext personsDbContext)
         {
             _db = personsDbContext;
-
         }
 
         public CountryResponse AddCountry(CountryAddRequest? countryAddRequest)
