@@ -47,8 +47,9 @@ namespace Services
             person.PersonID = Guid.NewGuid();
 
             //add person object to persons list
-            _db.Persons.Add(person);
-            _db.SaveChanges();
+            //_db.Persons.Add(person);
+            //_db.SaveChanges();
+            int i = _db.sp_InsertPerson(person);
 
             //convert the Persons object into PersonResponse type
             return ConvertPersonToPersonResponse(person);
@@ -193,17 +194,22 @@ namespace Services
                 throw new ArgumentException("Given person ID doesn't exist");
             }
 
-            //Update all details
-            matchingPerson.PersonName = personUpdateRequest.PersonName;
-            matchingPerson.Email = personUpdateRequest.Email;
-            matchingPerson.DateOfBirth = personUpdateRequest.DateOfBirth;
-            matchingPerson.Gender = personUpdateRequest.Gender.ToString();
-            matchingPerson.CountryID = personUpdateRequest.CountryID;
-            matchingPerson.Address = personUpdateRequest.Address;
-            matchingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
+            Person personToUpdate = personUpdateRequest.ToPerson();
 
-            _db.SaveChanges(); //UPDATE
-            return ConvertPersonToPersonResponse(matchingPerson);
+            ////Update all details
+            //matchingPerson.PersonName = personUpdateRequest.PersonName;
+            //matchingPerson.Email = personUpdateRequest.Email;
+            //matchingPerson.DateOfBirth = personUpdateRequest.DateOfBirth;
+            //matchingPerson.Gender = personUpdateRequest.Gender.ToString();
+            //matchingPerson.CountryID = personUpdateRequest.CountryID;
+            //matchingPerson.Address = personUpdateRequest.Address;
+            //matchingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
+
+            //_db.SaveChanges(); //UPDATE
+
+            int i = _db.sp_UpdatePerson(personToUpdate);
+
+            return ConvertPersonToPersonResponse(personToUpdate);
         }
 
         public bool DeletePerson(Guid? personID)
@@ -219,8 +225,10 @@ namespace Services
                 return false;
             }
 
-            _db.Persons.Remove(_db.Persons.First(temp => temp.PersonID == personID));
-            _db.SaveChanges();
+            //_db.Persons.Remove(_db.Persons.First(temp => temp.PersonID == personID));
+            //_db.SaveChanges();
+            _db.sp_DeletePerson(personID);
+
             return true;
         }
     }
