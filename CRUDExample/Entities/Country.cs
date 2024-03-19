@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities
 {
@@ -11,5 +12,8 @@ namespace Entities
         public Guid CountryID { get; set; }
 
         public string? CountryName { get; set; }
+        
+        public virtual ICollection<Person>? Persons { get; set; }
+
     }
 }

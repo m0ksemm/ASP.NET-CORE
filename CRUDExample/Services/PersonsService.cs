@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using Services.Helpers;
 using ServiceContracts.Enums;
 using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore;
 
 namespace Services
 {
@@ -22,12 +23,7 @@ namespace Services
             _countriesService = countriesService;
         }
 
-        private PersonResponse ConvertPersonToPersonResponse(Person person)
-        {
-            PersonResponse personResponse = person.ToPersonResponse();
-            personResponse.Country = _countriesService.GetCountryByCountryID(person.CountryID)?.CountryName;
-            return personResponse;
-        }
+        
 
         public PersonResponse AddPerson(PersonAddRequest? personAddRequest)
         {
@@ -52,14 +48,17 @@ namespace Services
             //int i = _db.sp_InsertPerson(person);
 
             //convert the Persons object into PersonResponse type
-            return ConvertPersonToPersonResponse(person);
+            return person.ToPersonResponse();
         }
 
         public List<PersonResponse> GetAllPersons()
         {
             //SELECT * from Persons
-            return _db.Persons.ToList().Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
-            //return _db.sp_GetAllPersons().Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
+
+            var persons = _db.Persons.Include("Country").ToList();
+            return persons
+                .Select(temp => temp.ToPersonResponse()).ToList();
+            //return _db.sp_GetAllPersons().Select(temp => temp.ToPersonResponse()).ToList();
         }
 
         public PersonResponse? GetPersonByPersonID(Guid? personID)
@@ -69,13 +68,16 @@ namespace Services
                 return null;
             }
 
-            Person? person = _db.Persons.FirstOrDefault(temp => temp.PersonID == personID);
+            Person? person = _db.Persons
+                .Include("Country")
+                .FirstOrDefault(temp => temp.PersonID == personID);
+            
             if (person == null)
             {
                 return null;
             }
 
-            return ConvertPersonToPersonResponse(person);
+            return person.ToPersonResponse();
         }
 
         public List<PersonResponse> GetFilteredPerson(string searchBy, string? searchString)
@@ -194,22 +196,22 @@ namespace Services
                 throw new ArgumentException("Given person ID doesn't exist");
             }
 
-            Person personToUpdate = personUpdateRequest.ToPerson();
+            //Person personToUpdate = personUpdateRequest.ToPerson();
 
-            ////Update all details
-            //matchingPerson.PersonName = personUpdateRequest.PersonName;
-            //matchingPerson.Email = personUpdateRequest.Email;
-            //matchingPerson.DateOfBirth = personUpdateRequest.DateOfBirth;
-            //matchingPerson.Gender = personUpdateRequest.Gender.ToString();
-            //matchingPerson.CountryID = personUpdateRequest.CountryID;
-            //matchingPerson.Address = personUpdateRequest.Address;
-            //matchingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
+            //Update all details
+            matchingPerson.PersonName = personUpdateRequest.PersonName;
+            matchingPerson.Email = personUpdateRequest.Email;
+            matchingPerson.DateOfBirth = personUpdateRequest.DateOfBirth;
+            matchingPerson.Gender = personUpdateRequest.Gender.ToString();
+            matchingPerson.CountryID = personUpdateRequest.CountryID;
+            matchingPerson.Address = personUpdateRequest.Address;
+            matchingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
 
-            //_db.SaveChanges(); //UPDATE
+            _db.SaveChanges(); //UPDATE
 
-            int i = _db.sp_UpdatePerson(personToUpdate);
+            //int i = _db.sp_UpdatePerson(personToUpdate);
 
-            return ConvertPersonToPersonResponse(personToUpdate);
+            return matchingPerson.ToPersonResponse();
         }
 
         public bool DeletePerson(Guid? personID)
