@@ -8,6 +8,11 @@
     <h1>Persons</h1>
 
     <a asp-controller="Persons" asp-action="Create" class="link-hover">Create Person</a>
+
+    <a asp-controller="Persons" asp-action="PersonsPDF" class="link-hover ml">Download as PDF</a>
+
+    <a asp-controller="Persons" asp-action="PersonsCSV" class="link-hover ml">Download as CSV</a>
+
     <div class="box flex">
         <div class="flex-1">
             <select class="form-input" name="searchBy"> 

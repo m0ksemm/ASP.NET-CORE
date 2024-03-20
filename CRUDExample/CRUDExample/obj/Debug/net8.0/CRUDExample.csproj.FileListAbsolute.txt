@@ -205,3 +205,6 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Rotativa.AspNetCore.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\CsvHelper.dll

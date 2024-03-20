@@ -1,13 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Rotativa.AspNetCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
 using System.Net;
+using System.IO;
 
 namespace CRUDExample.Controllers
 {
-    [Route("persons")]
+    [Route("[controller]")]
     public class PersonsController : Controller
     {
         //private fields
@@ -138,7 +140,7 @@ namespace CRUDExample.Controllers
 
         [HttpPost]
         [Route("[action]/{personID}")]
-        public async  Task<IActionResult> Delete(PersonUpdateRequest personUpdateResult)
+        public async Task<IActionResult> Delete(PersonUpdateRequest personUpdateResult)
         {
             PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personUpdateResult.PersonID);
             
@@ -149,6 +151,26 @@ namespace CRUDExample.Controllers
 
             await _personsService.DeletePerson(personUpdateResult.PersonID);
             return RedirectToAction("Index");
+        }
+
+        [Route("PersonsPDF")]
+        public async Task<IActionResult> PersonsPDF()
+        {
+            //Get list of persons
+            List<PersonResponse> persons = await _personsService.GetAllPersons();
+            return new ViewAsPdf("PersonsPDF", persons, ViewData) { 
+                PageMargins = new Rotativa.AspNetCore.Options.Margins() { 
+                    Top = 20, Right = 20, Left = 20, Bottom = 20 
+                },
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Landscape
+            };
+        }
+
+        [Route("PersonsCSV")]
+        public async Task<IActionResult> PersonsCSV()
+        {
+            MemoryStream memoryStream = await _personsService.GetPersonsCSV();
+            return File(memoryStream, "application/octec-stream", "persons.csv");
         }
     }
 }
