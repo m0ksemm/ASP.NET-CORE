@@ -216,6 +216,10 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[31.0.2, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             }
           },
           "imports": [

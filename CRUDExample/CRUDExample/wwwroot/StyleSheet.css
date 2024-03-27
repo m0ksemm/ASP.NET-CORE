@@ -428,6 +428,22 @@ a.link-hover:hover
     margin: auto;
 }
 
+.form-field > div:first-child {
+    flex: 1;
+    width: auto;
+}
+
+.form-field > div:nth-child(2) {
+    flex: 1;
+    width: auto;
+}
+
+.form-field {
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+
+
 @media screen and (min-width: 1000px)
 {
     .navbar-brand
@@ -446,5 +462,31 @@ a.link-hover:hover
     {
         display: inline-block;
         width: auto;
+    }
+
+    .center-box 
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+    .form-field > div 
+    {
+        padding: 15px !important;
+    }
+
+    .form-field > div:first-child 
+    {
+        flex: 1 !important;
+    }
+
+    .form-field > div:nth-child(2) 
+    {
+        flex: 3 !important;
+    }
+
+    .form-field 
+    {
+        flex-direction: row;
     }
 }
