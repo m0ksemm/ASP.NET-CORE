@@ -52,3 +52,5 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\obj\Debug\ne
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\bin\Debug\net8.0\RepositoryContracts.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Services\bin\Debug\net8.0\RepositoryContracts.pdb

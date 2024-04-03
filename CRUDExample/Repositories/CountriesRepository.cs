@@ -5,11 +5,11 @@ using RepositoryContracts;
 
 namespace Repositories
 {
-    public class CountriesRepository : ICountriesRepository
+    public class CountriesRepository : RepositoryContracts.ICountriesRepository
     {
-        private readonly ApplicationDbContext _db;
+        private readonly Entities.ApplicationDbContext _db;
 
-        public CountriesRepository(ApplicationDbContext db)
+        public CountriesRepository(Entities.ApplicationDbContext db)
         {
             _db = db;
         }

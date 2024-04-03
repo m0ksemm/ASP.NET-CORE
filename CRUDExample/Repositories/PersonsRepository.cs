@@ -13,9 +13,9 @@ namespace Repositories
 {
     public class PersonsRepository : IPersonsRepository
     {
-        ApplicationDbContext _db;
+        Entities.ApplicationDbContext _db;
 
-        public PersonsRepository(ApplicationDbContext db)
+        public PersonsRepository(Entities.ApplicationDbContext db)
         {
             _db = db;
         }

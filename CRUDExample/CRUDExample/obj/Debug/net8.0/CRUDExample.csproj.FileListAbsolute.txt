@@ -211,3 +211,7 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\RepositoryContracts.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\RepositoryContracts.pdb
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Repositories.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDExample\bin\Debug\net8.0\Repositories.pdb

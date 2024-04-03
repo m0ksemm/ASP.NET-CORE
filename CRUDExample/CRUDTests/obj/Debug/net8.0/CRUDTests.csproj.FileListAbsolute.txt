@@ -394,3 +394,5 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\n
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\net8.0\AutoFixture.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\net8.0\Fare.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\net8.0\RepositoryContracts.dll
+C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\CRUDTests\bin\Debug\net8.0\RepositoryContracts.pdb
