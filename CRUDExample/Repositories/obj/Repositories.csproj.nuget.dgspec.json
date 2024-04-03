@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Repositories\\Repositories.csproj": {}
+    "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj": {
+    "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\mdche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mdche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,21 +71,17 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\mdche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mdche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,18 +89,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj"
+              "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj"
+              "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj"
               }
             }
           }
@@ -143,21 +133,17 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
+    "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectUniqueName": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj",
         "projectName": "RepositoryContracts",
-        "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\RepositoryContracts\\obj\\",
+        "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj",
+        "packagesPath": "C:\\Users\\mdche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mdche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,15 +151,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\Entities\\Entities.csproj"
+              "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Entities.csproj"
               }
             }
           }
