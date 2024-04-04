@@ -37,3 +37,18 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\ne
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Entities\obj\Debug\net8.0\ref\Entities.dll

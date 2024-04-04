@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
       "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.min.js",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.min.js",
       "PackagePath": "staticwebassets\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.min.js",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\logo.png",
+      "Id": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\logo.png",
       "PackagePath": "staticwebassets\\logo.png"
     },
     {

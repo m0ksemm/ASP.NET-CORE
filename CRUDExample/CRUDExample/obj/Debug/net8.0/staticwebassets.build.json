@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JO1R1wxSqby3KhOOrJf/8wBhbfVW+3GBFIM12baSoqU=",
+  "Hash": "Qj0dloDecQwhaMrwR1fwIvQb3x8gNlmBZN2b0WIDnQs=",
   "Source": "CRUDExample",
   "BasePath": "_content/CRUDExample",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CRUDExample\\wwwroot",
       "Source": "CRUDExample",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.min.js",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.min.js",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "jquery.min.js",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.min.js",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "jquery.validate.min.js",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\logo.png",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\logo.png",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "logo.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "Rotativa/wkhtmltopdf.exe",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Rotativa\\wkhtmltopdf.exe"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
+      "Identity": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
       "SourceId": "CRUDExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Programming\\ASP.NET_Core\\CRUDExample\\CRUDExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\",
       "BasePath": "_content/CRUDExample",
       "RelativePath": "StyleSheet.css",
       "AssetKind": "All",

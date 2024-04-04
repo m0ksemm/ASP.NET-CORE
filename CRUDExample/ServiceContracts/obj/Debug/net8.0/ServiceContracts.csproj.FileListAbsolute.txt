@@ -46,3 +46,19 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\ServiceContracts\obj\
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\ServiceContracts\obj\Debug\net8.0\refint\ServiceContracts.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.pdb
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\ServiceContracts\obj\Debug\net8.0\ref\ServiceContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\bin\Debug\net8.0\ServiceContracts.deps.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\bin\Debug\net8.0\ServiceContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\bin\Debug\net8.0\ServiceContracts.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\bin\Debug\net8.0\Entities.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\bin\Debug\net8.0\Entities.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.csproj.AssemblyReference.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.AssemblyInfo.cs
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.sourcelink.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\refint\ServiceContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceContracts.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ref\ServiceContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\ServiceContracts\obj\Debug\net8.0\ServiceC.04662A29.Up2Date

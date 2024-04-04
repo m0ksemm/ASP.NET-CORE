@@ -14,3 +14,19 @@ C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\RepositoryContracts\o
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\RepositoryContracts\obj\Debug\net8.0\refint\RepositoryContracts.dll
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.pdb
 C:\Users\User\Desktop\Programming\ASP.NET_Core\CRUDExample\RepositoryContracts\obj\Debug\net8.0\ref\RepositoryContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.deps.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\bin\Debug\net8.0\RepositoryContracts.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\bin\Debug\net8.0\Entities.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\bin\Debug\net8.0\Entities.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.AssemblyInfo.cs
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.sourcelink.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\refint\RepositoryContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\RepositoryContracts.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\ref\RepositoryContracts.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\RepositoryContracts\obj\Debug\net8.0\Reposito.28D4BA81.Up2Date
