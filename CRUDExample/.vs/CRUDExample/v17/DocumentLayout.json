@@ -3,92 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudtests\\personsservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\personsservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudtests\\personscontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\personscontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7E09C32-D009-45B8-B906-E7DEA5A38FBD}|Services\\Services.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7E09C32-D009-45B8-B906-E7DEA5A38FBD}|Services\\Services.csproj|solutionrelative:services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E09C32-D009-45B8-B906-E7DEA5A38FBD}|Services\\Services.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7E09C32-D009-45B8-B906-E7DEA5A38FBD}|Services\\Services.csproj|solutionrelative:services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DB402F8-7871-402E-B86E-E318AB3922D9}|Repositories\\Repositories.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\repositories\\personsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DB402F8-7871-402E-B86E-E318AB3922D9}|Repositories\\Repositories.csproj|solutionrelative:repositories\\personsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DB402F8-7871-402E-B86E-E318AB3922D9}|Repositories\\Repositories.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\repositories\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DB402F8-7871-402E-B86E-E318AB3922D9}|Repositories\\Repositories.csproj|solutionrelative:repositories\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38428DEE-D33C-4AA6-A449-B4DB613BAB0A}|RepositoryContracts\\RepositoryContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\repositorycontracts\\ipersonsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38428DEE-D33C-4AA6-A449-B4DB613BAB0A}|RepositoryContracts\\RepositoryContracts.csproj|solutionrelative:repositorycontracts\\ipersonsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38428DEE-D33C-4AA6-A449-B4DB613BAB0A}|RepositoryContracts\\RepositoryContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\repositorycontracts\\icountriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38428DEE-D33C-4AA6-A449-B4DB613BAB0A}|RepositoryContracts\\RepositoryContracts.csproj|solutionrelative:repositorycontracts\\icountriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9223C19-E047-417E-949A-B424769F7DB3}|Entities\\Entities.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\entities\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9223C19-E047-417E-949A-B424769F7DB3}|Entities\\Entities.csproj|solutionrelative:entities\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\servicecontracts\\dto\\personaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\dto\\personaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9223C19-E047-417E-949A-B424769F7DB3}|Entities\\Entities.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9223C19-E047-417E-949A-B424769F7DB3}|Entities\\Entities.csproj|solutionrelative:entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudtests\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\wwwroot\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\wwwroot\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\servicecontracts\\icountriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\icountriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\servicecontracts\\dto\\personresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\dto\\personresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\crudexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\crudexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\servicecontracts\\ipersonsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7606B546-CABB-41C3-8FB8-8E729F713538}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\ipersonsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\views\\persons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\views\\persons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882C51A8-169B-4A74-8872-450AE44E0E8E}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,97 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\appsettings.json",
-              "RelativeDocumentMoniker": "CRUDExample\\appsettings.json",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\appsettings.json",
-              "RelativeToolTip": "CRUDExample\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAD0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-03T21:07:07.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonsServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUDTests\\PersonsServiceTest.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsServiceTest.cs",
-              "RelativeToolTip": "CRUDTests\\PersonsServiceTest.cs",
-              "ViewState": "AQIAAEEBAAAAAAAAAAAqwEwBAACBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\PersonsRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\PersonsRepository.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\PersonsRepository.cs",
-              "RelativeToolTip": "Repositories\\PersonsRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CountriesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\CountriesRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\CountriesRepository.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Repositories\\CountriesRepository.cs",
-              "RelativeToolTip": "Repositories\\CountriesRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwCMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IPersonsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\IPersonsRepository.cs",
-              "RelativeDocumentMoniker": "RepositoryContracts\\IPersonsRepository.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\IPersonsRepository.cs",
-              "RelativeToolTip": "RepositoryContracts\\IPersonsRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ICountriesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\ICountriesRepository.cs",
-              "RelativeDocumentMoniker": "RepositoryContracts\\ICountriesRepository.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\ICountriesRepository.cs",
-              "RelativeToolTip": "RepositoryContracts\\ICountriesRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonsService.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Services\\PersonsService.cs",
-              "RelativeDocumentMoniker": "Services\\PersonsService.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Services\\PersonsService.cs",
-              "RelativeToolTip": "Services\\PersonsService.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAowEIAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.588Z",
+              "Title": "CRUDExample",
+              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\CRUDExample.csproj",
+              "RelativeDocumentMoniker": "CRUDExample\\CRUDExample.csproj",
+              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\CRUDExample.csproj",
+              "RelativeToolTip": "CRUDExample\\CRUDExample.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-04T23:43:27.523Z",
               "EditorCaption": ""
             },
             {
@@ -199,191 +57,61 @@
               "RelativeDocumentMoniker": "CRUDExample\\Program.cs",
               "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Program.cs",
               "RelativeToolTip": "CRUDExample\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.59Z",
+              "WhenOpened": "2024-04-04T23:40:00.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Entities\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Entities\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABKAAAA",
+              "DocumentIndex": 1,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "CRUDTests\\CustomWebApplicationFactory.cs",
+              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "CRUDTests\\CustomWebApplicationFactory.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.593Z",
+              "WhenOpened": "2024-04-04T23:38:56.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonsControllerIntegrationTest.cs",
+              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsControllerIntegrationTest.cs",
+              "RelativeDocumentMoniker": "CRUDTests\\PersonsControllerIntegrationTest.cs",
+              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsControllerIntegrationTest.cs",
+              "RelativeToolTip": "CRUDTests\\PersonsControllerIntegrationTest.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAjwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:34:30.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonsControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
+              "RelativeDocumentMoniker": "CRUDTests\\PersonsControllerTest.cs",
+              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
+              "RelativeToolTip": "CRUDTests\\PersonsControllerTest.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAqwIMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T15:18:11.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CountriesService.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Services\\CountriesService.cs",
-              "RelativeDocumentMoniker": "Services\\CountriesService.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Services\\CountriesService.cs",
-              "RelativeToolTip": "Services\\CountriesService.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowEIAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Person.cs",
-              "RelativeDocumentMoniker": "Entities\\Person.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\Entities\\Person.cs",
-              "RelativeToolTip": "Entities\\Person.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PersonAddRequest.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "RelativeToolTip": "ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CountriesServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\CountriesServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUDTests\\CountriesServiceTest.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDTests\\CountriesServiceTest.cs",
-              "RelativeToolTip": "CRUDTests\\CountriesServiceTest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwCMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Persons\\Index.cshtml",
-              "RelativeDocumentMoniker": "CRUDExample\\Views\\Persons\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Persons\\Index.cshtml",
-              "RelativeToolTip": "CRUDExample\\Views\\Persons\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBoAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T19:53:38.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ICountriesService.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\ICountriesService.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\ICountriesService.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\ICountriesService.cs",
-              "RelativeToolTip": "ServiceContracts\\ICountriesService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCMAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
-              "RelativeDocumentMoniker": "CRUDExample\\wwwroot\\StyleSheet.css",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\wwwroot\\StyleSheet.css",
-              "RelativeToolTip": "CRUDExample\\wwwroot\\StyleSheet.css",
-              "ViewState": "AQIAAMsBAAAAAAAAAAAQwOUBAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-03T19:53:38.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CountriesController.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Controllers\\CountriesController.cs",
-              "RelativeDocumentMoniker": "CRUDExample\\Controllers\\CountriesController.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Controllers\\CountriesController.cs",
-              "RelativeToolTip": "CRUDExample\\Controllers\\CountriesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAABQwCIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IPersonsService.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\IPersonsService.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\IPersonsService.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\IPersonsService.cs",
-              "RelativeToolTip": "ServiceContracts\\IPersonsService.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAmwEQAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CRUDExample\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CRUDExample\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAcwB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T19:53:38.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "PersonsController.cs",
               "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "CRUDExample\\Controllers\\PersonsController.cs",
               "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
               "RelativeToolTip": "CRUDExample\\Controllers\\PersonsController.cs",
-              "ViewState": "AQIAAJwAAAAAAAAAAAA8wLEAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T19:53:38.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PersonResponse.cs",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\DTO\\PersonResponse.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\DTO\\PersonResponse.cs",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\ServiceContracts\\DTO\\PersonResponse.cs",
-              "RelativeToolTip": "ServiceContracts\\DTO\\PersonResponse.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAiwFsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:53:38.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Persons\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CRUDExample\\Views\\Persons\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Views\\Persons\\Edit.cshtml",
-              "RelativeToolTip": "CRUDExample\\Views\\Persons\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T19:53:38.634Z",
               "EditorCaption": ""
             }
           ]
