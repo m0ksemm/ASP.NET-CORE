@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="7.0.10" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="SerilogTimings" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>

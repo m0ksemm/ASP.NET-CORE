@@ -1,0 +1,215 @@
+2024-04-09 17:03:54.720 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-09 17:03:54.916 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-09 17:03:54.919 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-09 17:03:54.921 +03:00 [INF] Hosting environment: Development
+2024-04-09 17:03:54.921 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-09 17:03:56.054 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-09 17:03:56.246 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-09 17:03:56.267 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:03:56.315 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-09 17:03:56.538 +03:00 [INF] Index action method of PersonsController
+2024-04-09 17:03:56.591 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-09 17:03:56.594 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-09 17:03:57.784 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-09 17:03:57.921 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-09 17:03:57.941 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-09 17:03:58.205 +03:00 [INF] Executed ViewResult - view Index executed in 266.7041ms.
+2024-04-09 17:03:58.211 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 1893.1132ms
+2024-04-09 17:03:58.213 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:03:58.218 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 09 Apr 2024 14:03:57 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2024-04-09 17:03:58.225 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-09 17:03:58.225 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-09 17:03:58.231 +03:00 [INF] HTTP GET / responded 200 in 1988.9059 ms
+2024-04-09 17:03:58.241 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.3706ms
+2024-04-09 17:03:58.256 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 2230.3236ms
+2024-04-09 17:03:58.280 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.7714ms
+2024-04-09 17:20:53.645 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-09 17:20:53.836 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-09 17:20:53.841 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-09 17:20:53.843 +03:00 [INF] Hosting environment: Development
+2024-04-09 17:20:53.844 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-09 17:20:55.570 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-09 17:20:55.733 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-09 17:20:55.762 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:20:55.853 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-09 17:20:56.194 +03:00 [INF] Index action method of PersonsController
+2024-04-09 17:20:56.405 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 544.3132ms
+2024-04-09 17:20:56.408 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:20:56.411 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-09 17:20:56.416 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'SerilogTimings, Version=3.1.0.0, Culture=neutral, PublicKeyToken=ea6fc7d88906f03a'. The system cannot find the file specified.
+File name: 'SerilogTimings, Version=3.1.0.0, Culture=neutral, PublicKeyToken=ea6fc7d88906f03a'
+   at Services.PersonsService.GetFilteredPerson(String searchBy, String searchString)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Services.PersonsService.GetFilteredPerson(String searchBy, String searchString)
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-09 17:20:56.517 +03:00 [ERR] HTTP GET / responded 500 in 789.4284 ms
+2024-04-09 17:20:56.535 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 500 null text/html; charset=utf-8 978.3597ms
+2024-04-09 17:20:56.547 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-09 17:20:56.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-09 17:20:56.554 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.4049ms
+2024-04-09 17:20:56.646 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.1806ms
+2024-04-09 17:22:21.993 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-09 17:22:22.185 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-09 17:22:22.188 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-09 17:22:22.189 +03:00 [INF] Hosting environment: Development
+2024-04-09 17:22:22.189 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-09 17:22:22.406 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-09 17:22:22.551 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-09 17:22:22.573 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:22:22.618 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-09 17:22:22.780 +03:00 [INF] Index action method of PersonsController
+2024-04-09 17:22:22.887 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 262.7755ms
+2024-04-09 17:22:22.890 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:22:22.892 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-09 17:22:22.895 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'SerilogTimings, Version=3.0.1.0, Culture=neutral, PublicKeyToken=ea6fc7d88906f03a'. The system cannot find the file specified.
+File name: 'SerilogTimings, Version=3.0.1.0, Culture=neutral, PublicKeyToken=ea6fc7d88906f03a'
+   at Services.PersonsService.GetFilteredPerson(String searchBy, String searchString)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Services.PersonsService.GetFilteredPerson(String searchBy, String searchString)
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-09 17:22:22.944 +03:00 [ERR] HTTP GET / responded 500 in 399.4865 ms
+2024-04-09 17:22:22.952 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 500 null text/html; charset=utf-8 553.5367ms
+2024-04-09 17:22:22.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-09 17:22:22.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-09 17:22:22.965 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.2382ms
+2024-04-09 17:22:23.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1661ms
+2024-04-09 17:23:12.717 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-09 17:23:12.869 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-09 17:23:12.872 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-09 17:23:12.874 +03:00 [INF] Hosting environment: Development
+2024-04-09 17:23:12.875 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-09 17:23:14.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-09 17:23:14.234 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-09 17:23:14.256 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:23:14.307 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-09 17:23:14.480 +03:00 [INF] Index action method of PersonsController
+2024-04-09 17:23:14.518 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-09 17:23:14.521 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-09 17:23:15.571 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-09 17:23:15.674 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-09 17:23:15.690 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-09 17:23:15.868 +03:00 [INF] Executed ViewResult - view Index executed in 180.0171ms.
+2024-04-09 17:23:15.873 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 1563.1037ms
+2024-04-09 17:23:15.876 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:23:15.880 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-09 17:23:15.883 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 09 Apr 2024 14:23:14 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2024-04-09 17:23:15.885 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-09 17:23:15.893 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 12.5577ms
+2024-04-09 17:23:15.893 +03:00 [INF] HTTP GET / responded 200 in 1665.0985 ms
+2024-04-09 17:23:15.915 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 1812.3719ms
+2024-04-09 17:23:15.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.1329ms
+2024-04-09 17:25:23.256 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-09 17:25:23.442 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-09 17:25:23.445 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-09 17:25:23.447 +03:00 [INF] Hosting environment: Development
+2024-04-09 17:25:23.447 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-09 17:25:24.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-09 17:25:24.539 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-09 17:25:24.560 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:25:24.619 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-09 17:25:24.772 +03:00 [INF] Index action method of PersonsController
+2024-04-09 17:25:24.819 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-09 17:25:24.823 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-09 17:25:25.988 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-09 17:25:26.095 +03:00 [INF] Time for Filtered Persons from Database completed in 1272.2 ms
+2024-04-09 17:25:26.116 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-09 17:25:26.134 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-09 17:25:26.362 +03:00 [INF] Executed ViewResult - view Index executed in 231.8615ms.
+2024-04-09 17:25:26.367 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 1745.6956ms
+2024-04-09 17:25:26.370 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-09 17:25:26.374 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 09 Apr 2024 14:25:25 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2024-04-09 17:25:26.374 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-09 17:25:26.378 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-09 17:25:26.380 +03:00 [INF] HTTP GET / responded 200 in 1845.8510 ms
+2024-04-09 17:25:26.383 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.839ms
+2024-04-09 17:25:26.400 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 2005.7112ms
+2024-04-09 17:25:26.421 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.8573ms

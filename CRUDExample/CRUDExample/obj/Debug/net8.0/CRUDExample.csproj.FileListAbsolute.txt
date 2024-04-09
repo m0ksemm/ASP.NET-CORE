@@ -368,3 +368,16 @@ C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CR
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExample.genruntimeconfig.cache
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\obj\Debug\net8.0\ref\CRUDExample.dll
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\obj\Debug\net8.0\CRUDExam.61951AF1.Up2Date
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.MSSqlServer.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\bin\Debug\net8.0\SerilogTimings.dll

@@ -285,6 +285,14 @@
             "EPPlus": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "SerilogTimings": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
