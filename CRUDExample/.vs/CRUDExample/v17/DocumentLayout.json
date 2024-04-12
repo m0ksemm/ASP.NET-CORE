@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\filters\\actionfilters\\personslistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\filters\\actionfilters\\personslistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|c:\\users\\mdche\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\prog\\asp.net-core\\crudexample\\crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06260640-900C-452C-ABD1-C8FEB0789D0F}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Program.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\Program.cs",
+              "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Program.cs",
+              "RelativeToolTip": "CRUDExample\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T17:25:17.38Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +48,7 @@
               "RelativeDocumentMoniker": "CRUDExample\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
               "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
               "RelativeToolTip": "CRUDExample\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBkAAAAIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T17:31:40.236Z",
               "EditorCaption": ""
@@ -45,9 +61,10 @@
               "RelativeDocumentMoniker": "CRUDExample\\Controllers\\PersonsController.cs",
               "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
               "RelativeToolTip": "CRUDExample\\Controllers\\PersonsController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAuwCIAAAAIAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAnwCMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T21:01:08.972Z"
+              "WhenOpened": "2024-04-10T21:01:08.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,7 +74,7 @@
               "RelativeDocumentMoniker": "CRUDExample\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "ToolTip": "C:\\Users\\mdche\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Prog\\ASP.NET-CORE\\CRUDExample\\CRUDExample\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "RelativeToolTip": "CRUDExample\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAnwEgAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T20:47:27.479Z"
             }

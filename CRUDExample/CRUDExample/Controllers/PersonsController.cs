@@ -5,12 +5,13 @@ using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
 using System.Net;
-using System.IO;
 using CRUDExample.Filters.ActionFilters;
+using OfficeOpenXml.Style;
 
 namespace CRUDExample.Controllers
 {
     [Route("[controller]")]
+    [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3}, Order = 3)]
     public class PersonsController : Controller
     {
         //private fields
@@ -25,12 +26,12 @@ namespace CRUDExample.Controllers
             _countriesService = countriesService;
             _logger = logger;
         }
-
+        
         //Url: persons/index
         [Route("[action]")]
         [Route("/")]
-        [TypeFilter(typeof(PersonsListActionFilter))]
-        [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] {"X-Custom-Key", "Custom-Value"})]
+        [TypeFilter(typeof(PersonsListActionFilter), Order = 4)]
+        [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] {"My-Key-From-Action", "My-Value-From-Action", 1}, Order = 1)]
         public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
         {
             _logger.LogInformation("Index action method of PersonsController");
