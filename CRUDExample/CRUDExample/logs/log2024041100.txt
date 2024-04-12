@@ -1,0 +1,85 @@
+2024-04-11 00:04:32.046 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 00:04:32.477 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-11 00:04:32.485 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-11 00:04:32.487 +03:00 [INF] Hosting environment: Development
+2024-04-11 00:04:32.488 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-11 00:04:33.329 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-11 00:04:33.618 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-11 00:04:33.638 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-11 00:04:33.706 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-11 00:04:58.227 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-11 00:05:04.678 +03:00 [INF] Index action method of PersonsController
+2024-04-11 00:05:04.731 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-11 00:05:04.735 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-11 00:05:05.871 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-11 00:05:05.962 +03:00 [INF] Time for Filtered Persons from Database completed in 1227.5 ms
+2024-04-11 00:05:05.985 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-11 00:05:08.410 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-11 00:05:08.425 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-11 00:05:08.642 +03:00 [INF] Executed ViewResult - view Index executed in 220.4247ms.
+2024-04-11 00:05:08.648 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 34938.5414ms
+2024-04-11 00:05:08.651 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-11 00:05:08.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/StyleSheet.css - null null
+2024-04-11 00:05:08.658 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 10 Apr 2024 21:05:08 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2024-04-11 00:05:08.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/logo.png?v=g0wulK1sejD74FD4LqQARs-PuSpjBxnCgQmYtGH1iqc - null null
+2024-04-11 00:05:08.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-11 00:05:08.667 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /StyleSheet.css
+2024-04-11 00:05:08.671 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /logo.png
+2024-04-11 00:05:08.670 +03:00 [INF] HTTP GET / responded 200 in 35055.5755 ms
+2024-04-11 00:05:08.678 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 18.7074ms
+2024-04-11 00:05:08.683 +03:00 [INF] The file /logo.png was not modified
+2024-04-11 00:05:08.683 +03:00 [INF] The file /StyleSheet.css was not modified
+2024-04-11 00:05:08.685 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: image/png
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Wed, 03 Apr 2024 19:53:06 GMT
+2024-04-11 00:05:08.685 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Wed, 03 Apr 2024 19:53:06 GMT
+2024-04-11 00:05:08.686 +03:00 [INF] HTTP GET /logo.png responded 304 in 15.2462 ms
+2024-04-11 00:05:08.687 +03:00 [INF] HTTP GET /StyleSheet.css responded 304 in 20.4691 ms
+2024-04-11 00:05:08.689 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/logo.png?v=g0wulK1sejD74FD4LqQARs-PuSpjBxnCgQmYtGH1iqc - 304 null image/png 30.0164ms
+2024-04-11 00:05:08.690 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/StyleSheet.css - 304 null text/css 32.0424ms
+2024-04-11 00:05:08.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 35374.5443ms
+2024-04-11 00:05:08.697 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-11 00:05:08.791 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.5367ms
+2024-04-11 00:05:08.842 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2024-04-11 00:05:08.845 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2024-04-11 00:05:08.855 +03:00 [INF] Response:
+StatusCode: 404
+2024-04-11 00:05:08.856 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 11.7715 ms
+2024-04-11 00:05:08.860 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 404 0 null 18.7816ms
+2024-04-11 00:05:08.863 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/favicon.ico, Response status code: 404
