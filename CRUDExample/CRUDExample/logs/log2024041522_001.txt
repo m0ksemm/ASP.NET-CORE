@@ -1,0 +1,98 @@
+2024-04-15 22:12:29.547 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-15 22:12:29.566 +03:00 [INF] Hosting environment: Development
+2024-04-15 22:12:29.567 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-15 22:32:03.525 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-15 22:32:03.702 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-15 22:32:03.959 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-15 22:32:04.138 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-15 22:32:04.172 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-15 22:32:04.268 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-15 22:32:04.471 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:04.472 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:04.473 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:04.475 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-15 22:32:04.477 +03:00 [INF] Index action method of PersonsController
+2024-04-15 22:32:04.484 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-15 22:32:04.488 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-15 22:32:06.140 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-15 22:32:06.270 +03:00 [INF] Time for Filtered Persons from Database completed in 1783.3 ms
+2024-04-15 22:32:06.286 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-15 22:32:06.298 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-15 22:32:06.348 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:06.350 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:06.351 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:06.368 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:32:06.611 +03:00 [INF] Executed ViewResult - view Index executed in 247.687ms.
+2024-04-15 22:32:06.617 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 2345.191ms
+2024-04-15 22:32:06.619 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-15 22:32:06.623 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Apr 2024 19:32:05 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+2024-04-15 22:32:06.634 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-15 22:32:06.634 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:32:06.639 +03:00 [INF] HTTP GET / responded 200 in 2506.8157 ms
+2024-04-15 22:32:06.644 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.3814ms
+2024-04-15 22:32:06.682 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 2731.8817ms
+2024-04-15 22:32:06.738 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.8807ms
+2024-04-15 22:32:09.565 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/create - null null
+2024-04-15 22:32:09.572 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/create
+2024-04-15 22:32:09.578 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-04-15 22:32:09.587 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-15 22:32:09.594 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:09.596 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:09.599 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-before
+2024-04-15 22:32:09.635 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-15 22:32:09.648 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:09.651 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:09.652 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method-after
+2024-04-15 22:32:09.656 +03:00 [INF] Executing ViewResult, running view Create.
+2024-04-15 22:32:09.778 +03:00 [INF] Executed ViewResult - view Create executed in 124.4589ms.
+2024-04-15 22:32:09.780 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 190.7882ms
+2024-04-15 22:32:09.782 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-04-15 22:32:09.785 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Apr 2024 19:32:09 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+Me-Key-From-Global: [Redacted]
+my-key: [Redacted]
+2024-04-15 22:32:09.787 +03:00 [INF] HTTP GET /Persons/create responded 200 in 214.1678 ms
+2024-04-15 22:32:09.789 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/create - 200 null text/html; charset=utf-8 223.9318ms
+2024-04-15 22:32:09.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-15 22:32:09.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:32:09.807 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.2189ms
+2024-04-15 22:32:09.822 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8626ms
+2024-04-15 22:32:13.728 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/create - application/x-www-form-urlencoded 283
+2024-04-15 22:32:13.735 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/create
+2024-04-15 22:32:13.738 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-04-15 22:32:13.750 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
