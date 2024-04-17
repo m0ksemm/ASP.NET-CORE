@@ -20,9 +20,9 @@ namespace CRUDExample.Filters.ActionFilters
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            _logger.LogInformation("{FilterName}.{MethodName} method-before", nameof(ResponseHeaderActionFilter), nameof(OnActionExecutionAsync));
             //before logic
-
+            _logger.LogInformation("{FilterName}.{MethodName} method-before", nameof(ResponseHeaderActionFilter), nameof(OnActionExecutionAsync));
+            
             await next();//calls the subsequent filter or action method
 
             //after logic

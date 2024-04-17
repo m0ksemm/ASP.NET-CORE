@@ -7,11 +7,18 @@ using ServiceContracts.Enums;
 using System.Net;
 using CRUDExample.Filters.ActionFilters;
 using OfficeOpenXml.Style;
+using CRUDExample.Filters.ResultFilters;
+using CRUDExample.Filters.ResourceFilters;
+using CRUDExample.Filters.AuthorizationFilter;
+using CRUDExample.Filters.ExceptionFilter;
+using CRUDExample.Filters;
 
 namespace CRUDExample.Controllers
 {
     [Route("[controller]")]
     [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3}, Order = 3)]
+    [TypeFilter(typeof(HandleExceptionFilter))]
+    [TypeFilter(typeof(PersonsAlwaysRunResultFilter))]
     public class PersonsController : Controller
     {
         //private fields
@@ -30,8 +37,10 @@ namespace CRUDExample.Controllers
         //Url: persons/index
         [Route("[action]")]
         [Route("/")]
-        [TypeFilter(typeof(PersonsListActionFilter), Order = 4)]
+        [ServiceFilter(typeof(PersonsListActionFilter), Order = 4)]
         [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] {"My-Key-From-Action", "My-Value-From-Action", 1}, Order = 1)]
+        [TypeFilter(typeof(PersonsListResultFilter))]
+        [SkipFilter]
         public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
         {
             _logger.LogInformation("Index action method of PersonsController");
@@ -65,6 +74,7 @@ namespace CRUDExample.Controllers
         [HttpPost]
         [Route("create")]
         [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
+        [TypeFilter(typeof(FeatureDisabledResourceFilter), Arguments = new object[] { false })]
         public async Task<IActionResult> Create(PersonAddRequest personRequest)
         {
             //call the service method
@@ -76,6 +86,7 @@ namespace CRUDExample.Controllers
 
         [HttpGet]
         [Route("[action]/{personID}")] //Eg: /persons/edit/1
+        //[TypeFilter(typeof(TokenResultFilter))]
         public async Task<IActionResult> Edit(Guid personID)
         {
             PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personID);
@@ -95,6 +106,7 @@ namespace CRUDExample.Controllers
         [HttpPost]
         [Route("[action]/{personID}")]
         [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
+        [TypeFilter(typeof(TokenAuthorizationFilter))]
         public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
             PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personRequest.PersonID);
