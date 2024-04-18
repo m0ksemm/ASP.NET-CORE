@@ -17,12 +17,19 @@ builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, 
     .ReadFrom.Services(services); //read out current app's services and make them available to serilog
 });
 
+builder.Services.AddTransient<ResponseHeaderActionFilter>();
 //it adds controllers and views as services
 builder.Services.AddControllersWithViews(options =>
 {
     //options.Filters.Add<ResponseHeaderActionFilter>(5);
-    var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
-    options.Filters.Add(new ResponseHeaderActionFilter(logger, "Me-Key-From-Global", "My-Value-From-Global", 2));
+    var logger = builder.Services.BuildServiceProvider().GetService<ILogger<ResponseHeaderActionFilter>>();
+
+    options.Filters.Add(new ResponseHeaderActionFilter(logger) 
+    { 
+        Key = "Me-Key-From-Global", 
+        Value = "My-Value-From-Global", 
+        Order = 2 
+    });
 });
 
 //add services into IoC container

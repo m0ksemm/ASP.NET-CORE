@@ -1,3 +1,0 @@
-2024-04-13 01:58:11.103 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2024-04-13 01:58:11.117 +03:00 [INF] Hosting environment: Development
-2024-04-13 01:58:11.118 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
