@@ -33,5 +33,19 @@ namespace RepositoryContracts
         /// <param name="CountryName"></param>
         /// <returns>Matching country or null</returns>
         Task<Country?> GetCountryByCountryName(string CountryName);
+
+        /// <summary>
+        /// Deletes a country object based on the country id
+        /// </summary>
+        /// <param name="countryID">Country ID (guid) to search</param>
+        /// <returns>Returns true, if the deletion is successful; otherwise returns false</returns>
+        Task<bool> DeleteCountry(Guid countryID);
+
+        /// <summary>
+        /// Updates a country object (country name and other details) based on the given country id
+        /// </summary>
+        /// <param name="country">Country object to update</param>
+        /// <returns>Returns the updated country object</returns>
+        Task<Country> UpdateCountry(Country country);
     }
 }

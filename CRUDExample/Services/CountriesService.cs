@@ -5,6 +5,7 @@ using OfficeOpenXml;
 using RepositoryContracts;
 using ServiceContracts;
 using ServiceContracts.DTO;
+using Services.Helpers;
 
 namespace Services
 {
@@ -72,6 +73,59 @@ namespace Services
 
             return country_response_from_list.ToCountryResponse();
         }
+
+
+
+
+
+
+
+
+        public async Task<CountryResponse> UpdateCountry(CountryUpdateRequest? countryUpdateRequest)
+        {
+            if (countryUpdateRequest == null)
+                throw new ArgumentNullException(nameof(countryUpdateRequest));
+
+            //validation
+            ValidationHelper.ModelValidation(countryUpdateRequest);
+
+            //get matching person object to update
+            Country? matchingCountry = await _countriesRepository.GetCountryByCountryId(countryUpdateRequest.CountryID);
+            if (matchingCountry == null)
+            {
+                throw new ArgumentException("Given person id doesn't exist");
+            }
+
+            //update all details
+            matchingCountry.CountryName = countryUpdateRequest.CountryName;
+
+            await _countriesRepository.UpdateCountry(matchingCountry); //UPDATE
+
+            return matchingCountry.ToCountryResponse();
+        }
+
+        public async Task<bool> DeletePerson(Guid? countryID)
+        {
+            if (countryID == null)
+            {
+                throw new ArgumentNullException(nameof(countryID));
+            }
+
+            Country? country = await _countriesRepository.GetCountryByCountryId(countryID.Value);
+            if (country == null)
+                return false;
+
+            await _countriesRepository.DeleteCountry(countryID.Value);
+
+            return true;
+        }
+
+
+
+
+
+
+
 
         public async Task<int> UploadCountriesFromExcelFile(IFormFile formFile)
         {

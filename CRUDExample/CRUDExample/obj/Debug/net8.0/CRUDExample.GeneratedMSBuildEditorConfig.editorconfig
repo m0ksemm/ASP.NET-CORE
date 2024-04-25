@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mdche/OneDrive/Рабочий стол/Prog/ASP.NET-CORE/CRUDExample/CRUDExample/Views/Countries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdche/OneDrive/Рабочий стол/Prog/ASP.NET-CORE/CRUDExample/CRUDExample/Views/Countries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdche/OneDrive/Рабочий стол/Prog/ASP.NET-CORE/CRUDExample/CRUDExample/Views/Countries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mdche/OneDrive/Рабочий стол/Prog/ASP.NET-CORE/CRUDExample/CRUDExample/Views/Countries/UploadFromExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXFVwbG9hZEZyb21FeGNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

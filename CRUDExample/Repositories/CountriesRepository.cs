@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using RepositoryContracts;
+using System;
 
 namespace Repositories
 {
@@ -22,6 +23,8 @@ namespace Repositories
             return country;
         }
 
+
+
         public async Task<List<Country>> GetAllCountries()
         {
             return await _db.Countries.ToListAsync();
@@ -35,6 +38,28 @@ namespace Repositories
         public async Task<Country?> GetCountryByCountryName(string countryName)
         {
             return await _db.Countries.FirstOrDefaultAsync(temp => temp.CountryName == countryName);
+        }
+
+        public async Task<bool> DeleteCountry(Guid countryID)
+        {
+            _db.Countries.RemoveRange(_db.Countries.Where(temp => temp.CountryID == countryID));
+            int rowsDeleted = await _db.SaveChangesAsync();
+
+            return rowsDeleted > 0;
+        }
+
+        public async Task<Country> UpdateCountry(Country country)
+        {
+            Country? matchingCountry = await _db.Countries.FirstOrDefaultAsync(temp => temp.CountryID == country.CountryID);
+            if (matchingCountry == null)
+            {
+                return country;
+            }
+            matchingCountry.CountryName = country.CountryName;
+
+            int countUpdated = await _db.SaveChangesAsync();
+
+            return matchingCountry;
         }
     }
 }
