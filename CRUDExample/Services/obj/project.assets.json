@@ -1428,6 +1428,16 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Exceptions.dll": {}
+        }
+      },
       "RepositoryContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3927,6 +3937,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../Exceptions/Exceptions.csproj",
+      "msbuildProject": "../Exceptions/Exceptions.csproj"
+    },
     "RepositoryContracts/1.0.0": {
       "type": "project",
       "path": "../RepositoryContracts/RepositoryContracts.csproj",
@@ -3941,6 +3956,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EPPlus >= 7.0.10",
+      "Exceptions >= 1.0.0",
       "RepositoryContracts >= 1.0.0",
       "Serilog.Extensions.Hosting >= 8.0.0",
       "SerilogTimings >= 3.0.1",
@@ -3980,6 +3996,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Exceptions\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\Exceptions\\Exceptions.csproj"
+            },
             "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
               "projectPath": "C:\\Users\\mdche\\OneDrive\\Рабочий стол\\Prog\\ASP.NET-CORE\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj"
             },

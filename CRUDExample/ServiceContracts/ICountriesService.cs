@@ -39,7 +39,7 @@ namespace ServiceContracts
 
         Task<CountryResponse> UpdateCountry(CountryUpdateRequest? countryUpdateRequest);
 
-        Task<bool> DeletePerson(Guid? countryID);
+        Task<bool> DeleteCountry(Guid? countryID);
        
     }
 }

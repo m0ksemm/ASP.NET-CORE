@@ -9,6 +9,7 @@
       "CRUDExample/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
+          "Exceptions": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
           "Repositories": "1.0.0",
@@ -1187,6 +1188,11 @@
           "Entities.dll": {}
         }
       },
+      "Exceptions/1.0.0": {
+        "runtime": {
+          "Exceptions.dll": {}
+        }
+      },
       "Repositories/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
@@ -1217,6 +1223,7 @@
       "Services/1.0.0": {
         "dependencies": {
           "EPPlus": "7.0.10",
+          "Exceptions": "1.0.0",
           "RepositoryContracts": "1.0.0",
           "Serilog.Extensions.Hosting": "8.0.0",
           "SerilogTimings": "3.0.1",
@@ -2026,6 +2033,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Exceptions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

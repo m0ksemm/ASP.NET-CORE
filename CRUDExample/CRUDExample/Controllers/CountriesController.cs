@@ -1,5 +1,6 @@
 ﻿using CRUDExample.Filters.ActionFilters;
 using CRUDExample.Filters.AuthorizationFilter;
+using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ServiceContracts;
@@ -13,10 +14,12 @@ namespace CRUDExample.Controllers
     public class CountriesController : Controller
     {
         private readonly ICountriesService _countriesService;
+        private readonly IPersonsGetterService _personsService;
 
-        public CountriesController(ICountriesService countriesService)
+        public CountriesController(ICountriesService countriesService, IPersonsGetterService personsService)
         {
             _countriesService = countriesService;
+            _personsService = personsService;
         }
 
         [Route("UploadFromExcel")]
@@ -69,13 +72,6 @@ namespace CRUDExample.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            List<CountryResponse> countries = await _countriesService.GetAllCountries();
-            ViewBag.Countries = countries.Select(temp =>
-              new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() }
-            );
-
-            //new SelectListItem() { Text="Harsha", Value="1" }
-            //<option value="1">Harsha</option>
             return View();
         }
 
@@ -116,8 +112,7 @@ namespace CRUDExample.Controllers
 
             CountryUpdateRequest countryUpdateRequest = countryResponse.ToCountryUpdateRequest();
 
-            List<CountryResponse> countries = await _countriesService.GetAllCountries();
-            ViewBag.Countries = countries.Select(temp => new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() });
+           
 
             return View(countryUpdateRequest);
         }
@@ -128,6 +123,18 @@ namespace CRUDExample.Controllers
         //[TypeFilter(typeof(TokenAuthorizationFilter))]
         public async Task<IActionResult> Edit(CountryUpdateRequest countryRequest)
         {
+            List<CountryResponse> countries = await _countriesService.GetAllCountries();
+
+            if (countries.Where(country => country.CountryName == countryRequest.CountryName).Count() != 0)
+            {
+                ViewBag.Error = "This country already exists!";
+
+                return View(countryRequest);
+            }
+
+
+            ViewBag.Countries = countries.Select(temp => new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() });
+
             CountryResponse? countryResponse = await _countriesService.GetCountryByCountryID(countryRequest.CountryID);
             if (countryResponse == null)
             {
@@ -137,33 +144,42 @@ namespace CRUDExample.Controllers
             return RedirectToAction("Index");
         }
 
-        //[HttpGet]
-        //[Route("[action]/{personID}")]
-        //public async Task<IActionResult> Delete(Guid? personID)
-        //{
-        //    PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personID);
-        //    if (personResponse == null)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
+        [HttpGet]
+        [Route("[action]/{countryID}")]
+        public async Task<IActionResult> Delete(Guid? countryID)
+        {
+            CountryResponse? countryResponse = await _countriesService.GetCountryByCountryID(countryID);
+            if (countryResponse == null)
+            {
+                return RedirectToAction("Index");
+            }
 
-        //    return View(personResponse);
-        //}
+            return View(countryResponse);
+        }
 
-        //[HttpPost]
-        //[Route("[action]/{personID}")]
-        //public async Task<IActionResult> Delete(PersonUpdateRequest personUpdateResult)
-        //{
-        //    PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personUpdateResult.PersonID);
+        [HttpPost]
+        [Route("[action]/{countryID}")]
+        public async Task<IActionResult> Delete(CountryUpdateRequest countryUpdateResult)
+        {
+            CountryResponse? countryResponse = await _countriesService.GetCountryByCountryID(countryUpdateResult.CountryID);
 
-        //    if (personResponse == null)
-        //    {
-        //        RedirectToAction("Index");
-        //    }
+            if (countryResponse == null)
+            {
+                RedirectToAction("Index");
+            }
 
-        //    await _personsService.DeletePerson(personUpdateResult.PersonID);
-        //    return RedirectToAction("Index");
-        //}
+            List<PersonResponse> persons = await _personsService.GetAllPersons();
+
+            if (persons.Where(person => person.CountryID == countryUpdateResult.CountryID).Count() != 0)
+            {
+                ViewBag.Error = "There are workers from this country, you can not remove it!";
+
+                return View(countryResponse);
+            }
+
+            await _countriesService. DeleteCountry(countryUpdateResult.CountryID);
+            return RedirectToAction("Index");
+        }
 
     }
 }

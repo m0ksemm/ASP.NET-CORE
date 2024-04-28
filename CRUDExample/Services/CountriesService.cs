@@ -104,7 +104,7 @@ namespace Services
             return matchingCountry.ToCountryResponse();
         }
 
-        public async Task<bool> DeletePerson(Guid? countryID)
+        public async Task<bool> DeleteCountry(Guid? countryID)
         {
             if (countryID == null)
             {
@@ -162,5 +162,6 @@ namespace Services
             }
             return countriesInserted;
         }
+
     }
 }
