@@ -1,0 +1,1641 @@
+2024-04-28 20:15:11.750 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-28 20:15:11.763 +03:00 [INF] Hosting environment: Production
+2024-04-28 20:15:11.765 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample
+2024-04-28 20:18:53.427 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-28 20:18:53.508 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-28 20:18:54.010 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-28 20:18:54.162 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-28 20:18:54.198 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:18:54.264 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:18:54.422 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:18:54.423 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:18:54.424 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:18:54.428 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:18:54.431 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:18:54.439 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:18:54.444 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:18:55.397 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:18:55.501 +03:00 [INF] Time for Filtered Persons from Database completed in 1058.0 ms
+2024-04-28 20:18:55.518 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:18:55.527 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:18:55.561 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:18:55.563 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:18:55.564 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:18:55.567 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:18:55.579 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:18:55.743 +03:00 [INF] Executed ViewResult - view Index executed in 168.8377ms.
+2024-04-28 20:18:55.746 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:18:55.749 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 1474.3946ms
+2024-04-28 20:18:55.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:18:55.752 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:18:55.756 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:18:55 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:18
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:18:55.756 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.4914ms
+2024-04-28 20:18:55.760 +03:00 [INF] HTTP GET / responded 200 in 1604.3078 ms
+2024-04-28 20:18:55.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:18:55.772 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 1765.7585ms
+2024-04-28 20:18:55.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.9629ms
+2024-04-28 20:18:57.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be - null null
+2024-04-28 20:18:57.697 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-04-28 20:18:57.699 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:18:57.705 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:18:57.710 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:18:57.711 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:18:57.777 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:18:57.789 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:18:57.797 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:18:57.798 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:18:57.800 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:18:57.880 +03:00 [INF] Executed ViewResult - view Edit executed in 80.997ms.
+2024-04-28 20:18:57.882 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 174.9439ms
+2024-04-28 20:18:57.885 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:18:57.887 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:18:57 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:18:57.889 +03:00 [INF] HTTP GET /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be responded 200 in 191.8079 ms
+2024-04-28 20:18:57.893 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be - 200 null text/html; charset=utf-8 203.7717ms
+2024-04-28 20:18:57.898 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:18:57.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:18:57.901 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8581ms
+2024-04-28 20:18:57.920 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.0702ms
+2024-04-28 20:19:03.513 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be - application/x-www-form-urlencoded 463
+2024-04-28 20:19:03.518 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-04-28 20:19:03.522 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:03.528 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:03.547 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.548 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.616 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:03.626 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:03.640 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:19:03.729 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:19:03.746 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.747 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.748 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:19:03.749 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 218.0379ms
+2024-04-28 20:19:03.751 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:03.752 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:03.753 +03:00 [INF] HTTP POST /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be responded 302 in 234.5736 ms
+2024-04-28 20:19:03.755 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be - 302 0 null 241.732ms
+2024-04-28 20:19:03.757 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:19:03.760 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:19:03.761 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:03.766 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:03.768 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.768 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.769 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.770 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:19:03.770 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:19:03.771 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:19:03.772 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:19:03.774 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:19:03.777 +03:00 [INF] Time for Filtered Persons from Database completed in 5.7 ms
+2024-04-28 20:19:03.778 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:19:03.779 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:19:03.780 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.780 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.781 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:03.781 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:19:03.782 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:19:03.786 +03:00 [INF] Executed ViewResult - view Index executed in 4.1919ms.
+2024-04-28 20:19:03.788 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:19:03.789 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 21.6109ms
+2024-04-28 20:19:03.790 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:03.791 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:03 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:19
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:03.792 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 32.0325 ms
+2024-04-28 20:19:03.794 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 36.5567ms
+2024-04-28 20:19:03.803 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:03.803 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:03.807 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.0485ms
+2024-04-28 20:19:03.810 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.02ms
+2024-04-28 20:19:05.986 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 - null null
+2024-04-28 20:19:05.990 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1
+2024-04-28 20:19:05.991 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:05.993 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:05.994 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:05.995 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:05.998 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:06.001 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:19:06.002 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:06.003 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:06.003 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:19:06.008 +03:00 [INF] Executed ViewResult - view Edit executed in 4.744ms.
+2024-04-28 20:19:06.009 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 14.9628ms
+2024-04-28 20:19:06.009 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:06.010 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:05 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:06.012 +03:00 [INF] HTTP GET /Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 responded 200 in 21.5006 ms
+2024-04-28 20:19:06.013 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 - 200 null text/html; charset=utf-8 27.6984ms
+2024-04-28 20:19:06.022 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:06.023 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:06.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5999ms
+2024-04-28 20:19:06.029 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.5314ms
+2024-04-28 20:19:12.099 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 - application/x-www-form-urlencoded 461
+2024-04-28 20:19:12.105 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1
+2024-04-28 20:19:12.106 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:12.108 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:12.111 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.112 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.115 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:12.119 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:12.123 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:19:12.127 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:19:12.129 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.130 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.131 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:19:12.132 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 22.3688ms
+2024-04-28 20:19:12.132 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:12.133 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:12.134 +03:00 [INF] HTTP POST /Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 responded 302 in 28.9271 ms
+2024-04-28 20:19:12.136 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/13f82666-24e0-4ceb-99fa-0c9c9ac431e1 - 302 0 null 36.4728ms
+2024-04-28 20:19:12.139 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:19:12.143 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:19:12.144 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:12.145 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:12.147 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.147 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.148 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.148 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:19:12.149 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:19:12.150 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:19:12.151 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:19:12.154 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:19:12.156 +03:00 [INF] Time for Filtered Persons from Database completed in 4.6 ms
+2024-04-28 20:19:12.157 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:19:12.158 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:19:12.159 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.160 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.161 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:12.162 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:19:12.164 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:19:12.171 +03:00 [INF] Executed ViewResult - view Index executed in 7.3559ms.
+2024-04-28 20:19:12.172 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:19:12.173 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 26.8889ms
+2024-04-28 20:19:12.175 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:12.176 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:11 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:19
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:12.177 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 34.0008 ms
+2024-04-28 20:19:12.179 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 39.6727ms
+2024-04-28 20:19:12.186 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:12.187 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:12.192 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.1117ms
+2024-04-28 20:19:12.193 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.751ms
+2024-04-28 20:19:14.574 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e - null null
+2024-04-28 20:19:14.578 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-04-28 20:19:14.579 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:14.580 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:14.584 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:14.584 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:14.586 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:14.590 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:19:14.591 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:14.592 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:14.592 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:19:14.596 +03:00 [INF] Executed ViewResult - view Edit executed in 3.4583ms.
+2024-04-28 20:19:14.598 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 14.2958ms
+2024-04-28 20:19:14.599 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:14.600 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:13 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:14.601 +03:00 [INF] HTTP GET /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e responded 200 in 23.1545 ms
+2024-04-28 20:19:14.603 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e - 200 null text/html; charset=utf-8 29.557ms
+2024-04-28 20:19:14.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:14.616 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:14.619 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.6556ms
+2024-04-28 20:19:14.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.4333ms
+2024-04-28 20:19:43.155 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e - application/x-www-form-urlencoded 468
+2024-04-28 20:19:43.164 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-04-28 20:19:43.165 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:43.166 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:43.169 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.170 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.172 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:43.174 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:43.177 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:19:43.181 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:19:43.183 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.183 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.184 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:19:43.185 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 16.2484ms
+2024-04-28 20:19:43.185 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:43.186 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:43.186 +03:00 [INF] HTTP POST /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e responded 302 in 23.1491 ms
+2024-04-28 20:19:43.187 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e - 302 0 null 31.9621ms
+2024-04-28 20:19:43.191 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:19:43.194 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:19:43.195 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:43.196 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:43.198 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.199 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.199 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.199 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:19:43.200 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:19:43.200 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:19:43.201 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:19:43.203 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:19:43.205 +03:00 [INF] Time for Filtered Persons from Database completed in 4.5 ms
+2024-04-28 20:19:43.207 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:19:43.207 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:19:43.208 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.209 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.209 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:43.210 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:19:43.211 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:19:43.213 +03:00 [INF] Executed ViewResult - view Index executed in 1.7586ms.
+2024-04-28 20:19:43.213 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:19:43.214 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 16.7011ms
+2024-04-28 20:19:43.215 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:43.216 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:42 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:19
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:43.217 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 22.3933 ms
+2024-04-28 20:19:43.222 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 31.1437ms
+2024-04-28 20:19:43.226 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:43.227 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:43.229 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7455ms
+2024-04-28 20:19:43.231 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.9497ms
+2024-04-28 20:19:56.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 - null null
+2024-04-28 20:19:56.360 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465
+2024-04-28 20:19:56.360 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:56.361 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:56.363 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:56.364 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:56.366 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:56.368 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:19:56.369 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:56.369 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:56.370 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:19:56.372 +03:00 [INF] Executed ViewResult - view Edit executed in 1.9138ms.
+2024-04-28 20:19:56.373 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 10.1849ms
+2024-04-28 20:19:56.374 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:56.374 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:56 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:56.375 +03:00 [INF] HTTP GET /Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 responded 200 in 15.4959 ms
+2024-04-28 20:19:56.377 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 - 200 null text/html; charset=utf-8 23.2172ms
+2024-04-28 20:19:56.383 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:56.383 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:56.386 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7982ms
+2024-04-28 20:19:56.388 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.2034ms
+2024-04-28 20:19:59.327 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 - application/x-www-form-urlencoded 467
+2024-04-28 20:19:59.331 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465
+2024-04-28 20:19:59.332 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:59.334 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:59.338 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.338 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.341 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:59.344 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:19:59.346 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:19:59.350 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:19:59.353 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.353 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.354 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:19:59.355 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 18.1306ms
+2024-04-28 20:19:59.356 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:19:59.357 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:59.358 +03:00 [INF] HTTP POST /Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 responded 302 in 27.1903 ms
+2024-04-28 20:19:59.359 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/7d952471-0714-4974-9380-d6e3d8154465 - 302 0 null 31.7665ms
+2024-04-28 20:19:59.362 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:19:59.365 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:19:59.366 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:59.367 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:19:59.369 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.370 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.371 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.371 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:19:59.372 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:19:59.373 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:19:59.373 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:19:59.377 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:19:59.379 +03:00 [INF] Time for Filtered Persons from Database completed in 6.2 ms
+2024-04-28 20:19:59.381 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:19:59.381 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:19:59.382 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.383 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.384 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:19:59.384 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:19:59.385 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:19:59.387 +03:00 [INF] Executed ViewResult - view Index executed in 1.5285ms.
+2024-04-28 20:19:59.388 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:19:59.389 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 19.6579ms
+2024-04-28 20:19:59.389 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:19:59.390 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:19:59 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:19
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:19:59.391 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 25.4237 ms
+2024-04-28 20:19:59.393 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 31.1522ms
+2024-04-28 20:19:59.400 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:19:59.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:19:59.405 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.0391ms
+2024-04-28 20:19:59.406 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.6548ms
+2024-04-28 20:20:01.566 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 - null null
+2024-04-28 20:20:01.571 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-04-28 20:20:01.572 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:01.573 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:01.574 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:01.574 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:01.576 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:01.578 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:01.580 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:01.580 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:01.581 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:01.584 +03:00 [INF] Executed ViewResult - view Edit executed in 2.8318ms.
+2024-04-28 20:20:01.585 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 11.8024ms
+2024-04-28 20:20:01.587 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:01.588 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:01 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:01.589 +03:00 [INF] HTTP GET /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 responded 200 in 17.8387 ms
+2024-04-28 20:20:01.592 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 - 200 null text/html; charset=utf-8 26.0361ms
+2024-04-28 20:20:01.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:01.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:01.603 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6366ms
+2024-04-28 20:20:01.604 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8311ms
+2024-04-28 20:20:17.634 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 - application/x-www-form-urlencoded 448
+2024-04-28 20:20:17.640 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-04-28 20:20:17.642 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:17.643 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:17.645 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.645 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.647 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:17.649 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:17.652 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:20:17.655 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:20:17.656 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.657 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.658 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:20:17.659 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 15.2279ms
+2024-04-28 20:20:17.661 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:17.662 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:17.662 +03:00 [INF] HTTP POST /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 responded 302 in 22.0180 ms
+2024-04-28 20:20:17.663 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 - 302 0 null 28.9228ms
+2024-04-28 20:20:17.665 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:20:17.669 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:20:17.669 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:20:17.670 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:17.671 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.671 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.672 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.672 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:20:17.673 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:20:17.673 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:20:17.674 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:20:17.675 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:20:17.677 +03:00 [INF] Time for Filtered Persons from Database completed in 3.1 ms
+2024-04-28 20:20:17.678 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:20:17.679 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:20:17.680 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.680 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.681 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:17.681 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:20:17.682 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:20:17.684 +03:00 [INF] Executed ViewResult - view Index executed in 2.3818ms.
+2024-04-28 20:20:17.685 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:20:17.686 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 15.2018ms
+2024-04-28 20:20:17.687 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:20:17.687 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:17 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:20
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:17.688 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 19.3402 ms
+2024-04-28 20:20:17.689 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 23.7717ms
+2024-04-28 20:20:17.696 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:17.696 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:17.699 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.3284ms
+2024-04-28 20:20:17.701 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.2424ms
+2024-04-28 20:20:26.033 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 - null null
+2024-04-28 20:20:26.035 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-04-28 20:20:26.036 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:26.037 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:26.042 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:26.044 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:26.048 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:26.050 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:26.051 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:26.051 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:26.052 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:26.055 +03:00 [INF] Executed ViewResult - view Edit executed in 3.1986ms.
+2024-04-28 20:20:26.057 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 15.8894ms
+2024-04-28 20:20:26.058 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:26.058 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:25 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:26.059 +03:00 [INF] HTTP GET /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 responded 200 in 23.6560 ms
+2024-04-28 20:20:26.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 - 200 null text/html; charset=utf-8 28.3233ms
+2024-04-28 20:20:26.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:26.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:26.070 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.1811ms
+2024-04-28 20:20:26.075 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9811ms
+2024-04-28 20:20:32.572 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 - application/x-www-form-urlencoded 462
+2024-04-28 20:20:32.575 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-04-28 20:20:32.576 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:32.577 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:32.580 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.581 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.584 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:32.589 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2024-04-28 20:20:32.591 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2024-04-28 20:20:32.594 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Email] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2024-04-28 20:20:32.595 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.596 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.596 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-28 20:20:32.597 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 18.6032ms
+2024-04-28 20:20:32.598 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2024-04-28 20:20:32.599 +03:00 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+Me-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:32.602 +03:00 [INF] HTTP POST /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 responded 302 in 26.8139 ms
+2024-04-28 20:20:32.604 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 - 302 0 null 31.9128ms
+2024-04-28 20:20:32.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:20:32.609 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:20:32.609 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:20:32.610 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:20:32.612 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.612 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.613 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.613 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:20:32.613 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:20:32.614 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:20:32.614 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:20:32.616 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:20:32.618 +03:00 [INF] Time for Filtered Persons from Database completed in 3.2 ms
+2024-04-28 20:20:32.618 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:20:32.619 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:20:32.619 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.620 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.620 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:32.621 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:20:32.622 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:20:32.623 +03:00 [INF] Executed ViewResult - view Index executed in 1.4153ms.
+2024-04-28 20:20:32.626 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:20:32.627 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 15.9118ms
+2024-04-28 20:20:32.628 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:20:32.629 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:32 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:20
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:20:32.631 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 21.8808 ms
+2024-04-28 20:20:32.633 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 26.3567ms
+2024-04-28 20:20:32.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:32.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:32.642 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7642ms
+2024-04-28 20:20:32.648 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.6089ms
+2024-04-28 20:20:42.398 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:20:42.402 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:20:42.403 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:20:42.408 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:42.412 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:42.416 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:42.421 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:42.422 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:20:42.448 +03:00 [INF] Executed ViewResult - view Index executed in 26.036ms.
+2024-04-28 20:20:42.450 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 39.7333ms
+2024-04-28 20:20:42.453 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:20:42.454 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:42 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:42.455 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 52.6254 ms
+2024-04-28 20:20:42.456 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 57.9435ms
+2024-04-28 20:20:42.459 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:42.460 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:42.464 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.5979ms
+2024-04-28 20:20:42.466 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.2053ms
+2024-04-28 20:20:46.792 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - null null
+2024-04-28 20:20:46.798 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818
+2024-04-28 20:20:46.801 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:46.807 +03:00 [INF] Route matched with {action = "Edit", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:46.810 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:46.820 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[CountryID] = @__countryID_0
+2024-04-28 20:20:46.823 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:46.825 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:46.842 +03:00 [INF] Executed ViewResult - view Edit executed in 17.3534ms.
+2024-04-28 20:20:46.844 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Edit (CRUDExample) in 34.6905ms
+2024-04-28 20:20:46.845 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:46.846 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:46 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:46.846 +03:00 [INF] HTTP GET /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 responded 200 in 48.0911 ms
+2024-04-28 20:20:46.848 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - 200 null text/html; charset=utf-8 56.1814ms
+2024-04-28 20:20:46.853 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:46.854 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:46.858 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4621ms
+2024-04-28 20:20:46.859 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.994ms
+2024-04-28 20:20:49.470 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - application/x-www-form-urlencoded 245
+2024-04-28 20:20:49.473 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818
+2024-04-28 20:20:49.474 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:49.479 +03:00 [INF] Route matched with {action = "Edit", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.CountryUpdateRequest) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:49.483 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:49.485 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:49.488 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:49.489 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:49.496 +03:00 [INF] Executed ViewResult - view Edit executed in 6.7383ms.
+2024-04-28 20:20:49.498 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Edit (CRUDExample) in 16.3222ms
+2024-04-28 20:20:49.500 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:49.501 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:49 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:49.502 +03:00 [INF] HTTP POST /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 responded 200 in 29.0242 ms
+2024-04-28 20:20:49.503 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - 200 null text/html; charset=utf-8 33.5085ms
+2024-04-28 20:20:49.508 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:49.509 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:49.511 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8444ms
+2024-04-28 20:20:49.513 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5526ms
+2024-04-28 20:20:55.899 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - application/x-www-form-urlencoded 248
+2024-04-28 20:20:55.904 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818
+2024-04-28 20:20:55.905 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:55.906 +03:00 [INF] Route matched with {action = "Edit", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.CountryUpdateRequest) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:55.908 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:55.910 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:55.911 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:55.912 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:55.914 +03:00 [INF] Executed ViewResult - view Edit executed in 2.4045ms.
+2024-04-28 20:20:55.918 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Edit (CRUDExample) in 10.8058ms
+2024-04-28 20:20:55.919 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:55.920 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:55 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:55.921 +03:00 [INF] HTTP POST /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 responded 200 in 17.2803 ms
+2024-04-28 20:20:55.922 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - 200 null text/html; charset=utf-8 23.4557ms
+2024-04-28 20:20:55.926 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:55.926 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:55.930 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.7155ms
+2024-04-28 20:20:55.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.82ms
+2024-04-28 20:20:56.731 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - application/x-www-form-urlencoded 248
+2024-04-28 20:20:56.736 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818
+2024-04-28 20:20:56.737 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:56.738 +03:00 [INF] Route matched with {action = "Edit", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.CountryUpdateRequest) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:56.739 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:56.741 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:56.743 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:56.744 +03:00 [INF] Executing ViewResult, running view Edit.
+2024-04-28 20:20:56.745 +03:00 [INF] Executed ViewResult - view Edit executed in 1.4878ms.
+2024-04-28 20:20:56.746 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Edit (CRUDExample) in 7.2412ms
+2024-04-28 20:20:56.747 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Edit (CRUDExample)'
+2024-04-28 20:20:56.748 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:56 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:56.748 +03:00 [INF] HTTP POST /Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 responded 200 in 12.5608 ms
+2024-04-28 20:20:56.750 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5175/Countries/Edit/a0bc30f0-57ce-4279-2c2b-08dc5422e818 - 200 null text/html; charset=utf-8 19.0559ms
+2024-04-28 20:20:56.755 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:56.758 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:56.759 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.095ms
+2024-04-28 20:20:56.761 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.5134ms
+2024-04-28 20:20:58.427 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:20:58.432 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:20:58.433 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:20:58.434 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:20:58.435 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:20:58.437 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:20:58.439 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:20:58.440 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:20:58.441 +03:00 [INF] Executed ViewResult - view Index executed in 1.748ms.
+2024-04-28 20:20:58.442 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 7.0547ms
+2024-04-28 20:20:58.443 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:20:58.444 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:20:57 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:20:58.445 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 12.1873 ms
+2024-04-28 20:20:58.447 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 19.448ms
+2024-04-28 20:20:58.454 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:20:58.455 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:20:58.459 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.9519ms
+2024-04-28 20:20:58.463 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.7042ms
+2024-04-28 20:21:04.376 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:04.380 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:04.381 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:04.382 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:04.384 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:04.386 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:04.388 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:04.389 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:04.391 +03:00 [INF] Executed ViewResult - view Index executed in 2.0057ms.
+2024-04-28 20:21:04.392 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 8.4867ms
+2024-04-28 20:21:04.393 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:04.394 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:03 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:04.394 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 14.6058 ms
+2024-04-28 20:21:04.396 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 20.0786ms
+2024-04-28 20:21:04.405 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:04.406 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:04.409 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.2694ms
+2024-04-28 20:21:04.410 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.9693ms
+2024-04-28 20:21:05.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:05.428 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:05.429 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:05.430 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:05.432 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.433 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.433 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.434 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:05.434 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:05.435 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:05.436 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:05.438 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:05.440 +03:00 [INF] Time for Filtered Persons from Database completed in 4.5 ms
+2024-04-28 20:21:05.441 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:05.442 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:05.442 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.443 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.443 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:05.444 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:05.445 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:05.447 +03:00 [INF] Executed ViewResult - view Index executed in 1.9387ms.
+2024-04-28 20:21:05.447 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:05.448 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 16.2752ms
+2024-04-28 20:21:05.449 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:05.450 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:04 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:05.451 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 23.2862 ms
+2024-04-28 20:21:05.453 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 29.4499ms
+2024-04-28 20:21:05.460 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:05.461 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:05.464 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8743ms
+2024-04-28 20:21:05.465 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5931ms
+2024-04-28 20:21:06.151 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:06.156 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:06.157 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:06.159 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:06.162 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.163 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:06.165 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.165 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:06.168 +03:00 [INF] Executed ViewResult - view Index executed in 1.9908ms.
+2024-04-28 20:21:06.169 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 7.9278ms
+2024-04-28 20:21:06.170 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:06.171 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:05 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:06.172 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 17.0523 ms
+2024-04-28 20:21:06.176 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 24.6704ms
+2024-04-28 20:21:06.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:06.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:06.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.5193ms
+2024-04-28 20:21:06.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.1255ms
+2024-04-28 20:21:06.696 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:06.700 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:06.701 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:06.701 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:06.705 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.705 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.706 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.706 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:06.707 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:06.707 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:06.708 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:06.710 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:06.713 +03:00 [INF] Time for Filtered Persons from Database completed in 5.4 ms
+2024-04-28 20:21:06.714 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:06.715 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:06.716 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.717 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.717 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:06.718 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:06.718 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:06.720 +03:00 [INF] Executed ViewResult - view Index executed in 1.5425ms.
+2024-04-28 20:21:06.721 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:06.721 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 16.9209ms
+2024-04-28 20:21:06.723 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:06.724 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:06 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:06.725 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 25.2067 ms
+2024-04-28 20:21:06.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 30.3538ms
+2024-04-28 20:21:06.733 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:06.734 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:06.736 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7561ms
+2024-04-28 20:21:06.737 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5609ms
+2024-04-28 20:21:07.162 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:07.166 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:07.167 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:07.168 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:07.170 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.172 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:07.174 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.175 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:07.177 +03:00 [INF] Executed ViewResult - view Index executed in 2.1584ms.
+2024-04-28 20:21:07.179 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 8.9213ms
+2024-04-28 20:21:07.181 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:07.182 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:06 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:07.182 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 16.9301 ms
+2024-04-28 20:21:07.184 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 22.547ms
+2024-04-28 20:21:07.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:07.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:07.196 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.2349ms
+2024-04-28 20:21:07.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.6176ms
+2024-04-28 20:21:07.644 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:07.648 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:07.650 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:07.652 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:07.654 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.655 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.655 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.656 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:07.656 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:07.657 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:07.657 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:07.659 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:07.661 +03:00 [INF] Time for Filtered Persons from Database completed in 4.0 ms
+2024-04-28 20:21:07.662 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:07.663 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:07.664 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.665 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.666 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:07.666 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:07.667 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:07.668 +03:00 [INF] Executed ViewResult - view Index executed in 1.3687ms.
+2024-04-28 20:21:07.669 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:07.670 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 16.8011ms
+2024-04-28 20:21:07.671 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:07.672 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:07 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:07.672 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 23.8802 ms
+2024-04-28 20:21:07.674 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 30.2302ms
+2024-04-28 20:21:07.682 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:07.682 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:07.685 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.2511ms
+2024-04-28 20:21:07.686 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.7002ms
+2024-04-28 20:21:09.187 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:09.193 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:09.194 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:09.196 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:09.198 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:09.199 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:09.201 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:09.202 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:09.203 +03:00 [INF] Executed ViewResult - view Index executed in 1.5273ms.
+2024-04-28 20:21:09.205 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 7.5728ms
+2024-04-28 20:21:09.206 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:09.207 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:08 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:09.209 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 16.2071 ms
+2024-04-28 20:21:09.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 23.8168ms
+2024-04-28 20:21:09.216 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:09.217 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:09.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.3921ms
+2024-04-28 20:21:09.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.8569ms
+2024-04-28 20:21:10.180 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:10.184 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:10.185 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:10.186 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:10.187 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.188 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.188 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.189 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:10.189 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:10.190 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:10.190 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:10.192 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:10.193 +03:00 [INF] Time for Filtered Persons from Database completed in 2.9 ms
+2024-04-28 20:21:10.194 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:10.195 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:10.195 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.196 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.196 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.197 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:10.198 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:10.199 +03:00 [INF] Executed ViewResult - view Index executed in 1.3244ms.
+2024-04-28 20:21:10.200 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:10.201 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 13.6529ms
+2024-04-28 20:21:10.202 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:10.203 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:09 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:10.204 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 20.1966 ms
+2024-04-28 20:21:10.206 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 26.2904ms
+2024-04-28 20:21:10.214 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:10.217 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:10.219 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.0593ms
+2024-04-28 20:21:10.220 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9198ms
+2024-04-28 20:21:10.684 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:10.687 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:10.688 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:10.689 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:10.691 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.694 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:10.697 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:10.699 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:10.700 +03:00 [INF] Executed ViewResult - view Index executed in 1.4988ms.
+2024-04-28 20:21:10.702 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 11.3162ms
+2024-04-28 20:21:10.703 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:10.704 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:10 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:10.705 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 17.7757 ms
+2024-04-28 20:21:10.706 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 22.4111ms
+2024-04-28 20:21:10.713 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:10.713 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:10.719 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.9746ms
+2024-04-28 20:21:10.722 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.3379ms
+2024-04-28 20:21:11.153 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:11.156 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:11.157 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:11.157 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:11.159 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.161 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.162 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.162 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:11.163 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:11.164 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:11.164 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:11.166 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:11.168 +03:00 [INF] Time for Filtered Persons from Database completed in 3.8 ms
+2024-04-28 20:21:11.169 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:11.169 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:11.170 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.170 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.171 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.171 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:11.172 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:11.174 +03:00 [INF] Executed ViewResult - view Index executed in 2.0109ms.
+2024-04-28 20:21:11.176 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:11.177 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 18.7347ms
+2024-04-28 20:21:11.179 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:11.180 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:10 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:11.180 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 24.6166 ms
+2024-04-28 20:21:11.182 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 29.0376ms
+2024-04-28 20:21:11.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:11.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:11.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6718ms
+2024-04-28 20:21:11.198 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.7912ms
+2024-04-28 20:21:11.586 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:11.590 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:11.591 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:11.592 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:11.593 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.595 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:11.596 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:11.597 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:11.599 +03:00 [INF] Executed ViewResult - view Index executed in 1.8961ms.
+2024-04-28 20:21:11.601 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 8.071ms
+2024-04-28 20:21:11.602 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:11.604 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:10 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:11.605 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 14.1880 ms
+2024-04-28 20:21:11.607 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 20.4855ms
+2024-04-28 20:21:11.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:11.615 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:11.618 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.2975ms
+2024-04-28 20:21:11.619 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.4291ms
+2024-04-28 20:21:11.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:11.996 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:11.997 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:11.998 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:12.000 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.001 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.002 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.003 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:12.004 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:12.004 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:12.005 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:12.007 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:12.009 +03:00 [INF] Time for Filtered Persons from Database completed in 4.2 ms
+2024-04-28 20:21:12.010 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:12.010 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:12.011 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.011 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.012 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.013 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:12.014 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:12.017 +03:00 [INF] Executed ViewResult - view Index executed in 2.4249ms.
+2024-04-28 20:21:12.018 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:12.018 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 18.4027ms
+2024-04-28 20:21:12.019 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:12.020 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:11 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:12.021 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 25.5058 ms
+2024-04-28 20:21:12.022 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 29.5691ms
+2024-04-28 20:21:12.031 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:12.032 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:12.034 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9037ms
+2024-04-28 20:21:12.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.0258ms
+2024-04-28 20:21:12.355 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Countries/Countries - null null
+2024-04-28 20:21:12.359 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/Countries
+2024-04-28 20:21:12.360 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:12.361 +03:00 [INF] Route matched with {action = "Index", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.CountriesController (CRUDExample).
+2024-04-28 20:21:12.363 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.364 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-28 20:21:12.365 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.366 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:12.368 +03:00 [INF] Executed ViewResult - view Index executed in 2.4788ms.
+2024-04-28 20:21:12.369 +03:00 [INF] Executed action CRUDExample.Controllers.CountriesController.Index (CRUDExample) in 7.098ms
+2024-04-28 20:21:12.370 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.CountriesController.Index (CRUDExample)'
+2024-04-28 20:21:12.371 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:11 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-28 20:21:12.372 +03:00 [INF] HTTP GET /Countries/Countries responded 200 in 13.2661 ms
+2024-04-28 20:21:12.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Countries/Countries - 200 null text/html; charset=utf-8 20.6037ms
+2024-04-28 20:21:12.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:12.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:12.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9923ms
+2024-04-28 20:21:12.389 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.6809ms
+2024-04-28 20:21:12.676 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-28 20:21:12.681 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-28 20:21:12.681 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:12.682 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:12.684 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.685 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.685 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.687 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:12.688 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:12.688 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:12.689 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:12.691 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:12.694 +03:00 [INF] Time for Filtered Persons from Database completed in 5.1 ms
+2024-04-28 20:21:12.695 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:12.696 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:12.697 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.697 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.698 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:12.698 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:12.700 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:12.703 +03:00 [INF] Executed ViewResult - view Index executed in 3.6052ms.
+2024-04-28 20:21:12.704 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:12.706 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 22.7451ms
+2024-04-28 20:21:12.709 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:12.711 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:12 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:12.712 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 31.1976 ms
+2024-04-28 20:21:12.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 200 null text/html; charset=utf-8 37.9128ms
+2024-04-28 20:21:12.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:12.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:12.722 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.1567ms
+2024-04-28 20:21:12.725 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.3582ms
+2024-04-28 20:21:18.286 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-28 20:21:18.297 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-28 20:21:18.298 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:18.299 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-28 20:21:18.301 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.301 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.301 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.302 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-28 20:21:18.302 +03:00 [INF] Index action method of PersonsController
+2024-04-28 20:21:18.303 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-28 20:21:18.303 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-28 20:21:18.304 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-28 20:21:18.306 +03:00 [INF] Time for Filtered Persons from Database completed in 3.1 ms
+2024-04-28 20:21:18.307 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-28 20:21:18.308 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-28 20:21:18.309 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.310 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.310 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-28 20:21:18.311 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-28 20:21:18.312 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-28 20:21:18.314 +03:00 [INF] Executed ViewResult - view Index executed in 1.665ms.
+2024-04-28 20:21:18.315 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-28 20:21:18.316 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 15.1898ms
+2024-04-28 20:21:18.317 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-28 20:21:18.318 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 28 Apr 2024 17:21:17 GMT
+Server: Kestrel
+Last-Modified: 2024-04-28 20:21
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-28 20:21:18.319 +03:00 [INF] HTTP GET / responded 200 in 21.7777 ms
+2024-04-28 20:21:18.320 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 34.2166ms
+2024-04-28 20:21:18.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-28 20:21:18.327 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-28 20:21:18.328 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.2848ms
+2024-04-28 20:21:18.334 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.3588ms

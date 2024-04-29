@@ -1,0 +1,133 @@
+2024-04-22 10:04:46.058 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 10:04:46.117 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-04-22 10:04:46.128 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 10:04:46.138 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:04:46.156 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-22 10:04:46.223 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.224 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.224 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.225 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 10:04:46.225 +03:00 [INF] Index action method of PersonsController
+2024-04-22 10:04:46.225 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-22 10:04:46.226 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-22 10:04:46.664 +03:00 [INF] Time for Filtered Persons from Database completed in 438.1 ms
+2024-04-22 10:04:46.666 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-22 10:04:46.668 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 10:04:46.687 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.688 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.688 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:04:46.690 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 10:04:46.699 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 10:04:46.836 +03:00 [INF] Executed ViewResult - view Index executed in 138.3523ms.
+2024-04-22 10:04:46.838 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 10:04:46.839 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 680.8063ms
+2024-04-22 10:04:46.840 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:04:46.840 +03:00 [INF] Response:
+StatusCode: 200
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+Content-Type: text/html; charset=utf-8
+2024-04-22 10:04:46.842 +03:00 [ERR] HTTP GET /Persons/Index responded 500 in 716.6726 ms
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.Http.HeaderDictionary.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.Http.HeaderDictionary.set_Item(String key, StringValues value)
+   at CRUDExample.Filters.ResultFilters.PersonsListResultFilter.OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Filters\ResultFilters\PersonsListResultFilter.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-04-22 10:04:46.845 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 200 null text/html; charset=utf-8 729.6233ms
+2024-04-22 10:08:15.211 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 10:08:15.267 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-04-22 10:08:15.276 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 10:08:15.286 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:08:15.303 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-22 10:08:15.363 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.363 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.363 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.364 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 10:08:15.365 +03:00 [INF] Index action method of PersonsController
+2024-04-22 10:08:15.366 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-22 10:08:15.366 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-22 10:08:15.743 +03:00 [INF] Time for Filtered Persons from Database completed in 377.2 ms
+2024-04-22 10:08:15.746 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-22 10:08:15.747 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 10:08:15.765 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.765 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.766 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:08:15.767 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 10:08:15.774 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 10:08:15.890 +03:00 [INF] Executed ViewResult - view Index executed in 116.3248ms.
+2024-04-22 10:08:15.892 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 10:08:15.893 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 589.308ms
+2024-04-22 10:08:15.893 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:08:15.894 +03:00 [INF] Response:
+StatusCode: 200
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+Last-Modified: 2024-04-22 10:08
+Content-Type: text/html; charset=utf-8
+2024-04-22 10:08:15.895 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 621.4834 ms
+2024-04-22 10:08:15.899 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 200 null text/html; charset=utf-8 633.2519ms
+2024-04-22 10:11:35.198 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 10:11:35.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-04-22 10:11:35.257 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 10:11:35.269 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:11:35.288 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-22 10:11:35.347 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.348 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.348 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.349 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 10:11:35.349 +03:00 [INF] Index action method of PersonsController
+2024-04-22 10:11:35.350 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-04-22 10:11:35.350 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-04-22 10:11:35.744 +03:00 [INF] Time for Filtered Persons from Database completed in 394.0 ms
+2024-04-22 10:11:35.746 +03:00 [INF] GetSortedPersons of PersonsService
+2024-04-22 10:11:35.748 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 10:11:35.765 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.765 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.766 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-22 10:11:35.767 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 10:11:35.774 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 10:11:35.868 +03:00 [INF] Executed ViewResult - view Index executed in 94.4137ms.
+2024-04-22 10:11:35.869 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 10:11:35.870 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 581.641ms
+2024-04-22 10:11:35.870 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-22 10:11:35.871 +03:00 [INF] Response:
+StatusCode: 200
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+Last-Modified: 2024-04-22 10:11
+Content-Type: text/html; charset=utf-8
+2024-04-22 10:11:35.872 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 617.0684 ms
+2024-04-22 10:11:35.876 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 200 null text/html; charset=utf-8 628.6274ms

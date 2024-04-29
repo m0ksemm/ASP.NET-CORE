@@ -1,0 +1,12 @@
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\bin\Debug\net8.0\Exceptions.deps.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\bin\Debug\net8.0\Exceptions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\bin\Debug\net8.0\Exceptions.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.AssemblyInfo.cs
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.sourcelink.json
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\refint\Exceptions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\Exceptions.pdb
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\Exceptions\obj\Debug\net8.0\ref\Exceptions.dll

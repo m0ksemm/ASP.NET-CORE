@@ -891,3 +891,5 @@ C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CR
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDTests\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDTests\bin\Debug\net8.0\SerilogTimings.dll
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDTests\bin\Debug\net8.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDTests\bin\Debug\net8.0\Exceptions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDTests\bin\Debug\net8.0\Exceptions.pdb

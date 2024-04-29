@@ -1,0 +1,238 @@
+2024-04-29 13:19:56.161 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 13:19:56.420 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-29 13:19:56.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-29 13:19:57.293 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-29 13:19:57.314 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:19:57.372 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-29 13:19:57.554 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 174.8443ms
+2024-04-29 13:19:57.560 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:19:57.563 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-29 13:19:57.565 +03:00 [ERR] System.InvalidOperationExceptionUnable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+2024-04-29 13:19:57.602 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at CRUDExample.Middleware.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Middleware\ExceptionHandlingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-29 13:19:57.629 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+2024-04-29 13:19:57.630 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:19:57.633 +03:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2024-04-29 13:19:57.636 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-29 13:19:57.769 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-29 13:19:57.781 +03:00 [INF] Executing ViewResult, running view Error.
+2024-04-29 13:19:57.960 +03:00 [INF] Executed ViewResult - view Error executed in 186.7402ms.
+2024-04-29 13:19:57.961 +03:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 327.3877ms
+2024-04-29 13:19:57.963 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:19:57.964 +03:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Mon, 29 Apr 2024 10:19:57 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-29 13:19:57.967 +03:00 [ERR] HTTP GET / responded 500 in 677.8697 ms
+2024-04-29 13:19:57.977 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 500 null text/html; charset=utf-8 1047.3667ms
+2024-04-29 13:19:57.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 13:19:57.977 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Stylesheet.css - null null
+2024-04-29 13:19:57.977 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/error.svg - null null
+2024-04-29 13:19:57.981 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-29 13:19:57.983 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Stylesheet.css
+2024-04-29 13:19:57.983 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.6626ms
+2024-04-29 13:19:57.986 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /error.svg
+2024-04-29 13:19:57.993 +03:00 [INF] The file /Stylesheet.css was not modified
+2024-04-29 13:19:57.998 +03:00 [INF] The file /error.svg was not modified
+2024-04-29 13:19:58.003 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 25 Apr 2024 22:46:45 GMT
+2024-04-29 13:19:58.005 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: image/svg+xml
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sun, 28 Apr 2024 22:02:21 GMT
+2024-04-29 13:19:58.007 +03:00 [INF] HTTP GET /error.svg responded 304 in 21.1453 ms
+2024-04-29 13:19:58.006 +03:00 [INF] HTTP GET /Stylesheet.css responded 304 in 22.9066 ms
+2024-04-29 13:19:58.009 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/error.svg - 304 null image/svg+xml 31.277ms
+2024-04-29 13:19:58.013 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Stylesheet.css - 304 null text/css 36.1982ms
+2024-04-29 13:19:58.047 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.7454ms
+2024-04-29 13:19:58.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2024-04-29 13:19:58.090 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2024-04-29 13:19:58.092 +03:00 [INF] Response:
+StatusCode: 404
+2024-04-29 13:19:58.093 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 3.5430 ms
+2024-04-29 13:19:58.096 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 404 0 null 8.0375ms
+2024-04-29 13:19:58.100 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/favicon.ico, Response status code: 404
+2024-04-29 13:20:07.584 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-29 13:20:07.589 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-29 13:20:07.591 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:20:07.597 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-29 13:20:07.607 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 7.0885ms
+2024-04-29 13:20:07.609 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:20:07.611 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-29 13:20:07.612 +03:00 [ERR] System.InvalidOperationExceptionUnable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+2024-04-29 13:20:07.614 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method41(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at CRUDExample.Middleware.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Middleware\ExceptionHandlingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-29 13:20:07.620 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+2024-04-29 13:20:07.621 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:20:07.623 +03:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2024-04-29 13:20:07.625 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-29 13:20:07.626 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-29 13:20:07.627 +03:00 [INF] Executing ViewResult, running view Error.
+2024-04-29 13:20:07.633 +03:00 [INF] Executed ViewResult - view Error executed in 5.9778ms.
+2024-04-29 13:20:07.635 +03:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 10.0842ms
+2024-04-29 13:20:07.636 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:20:07.637 +03:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Mon, 29 Apr 2024 10:20:07 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-29 13:20:07.638 +03:00 [ERR] HTTP GET /Persons/Index responded 500 in 49.0168 ms
+2024-04-29 13:20:07.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 500 null text/html; charset=utf-8 59.1065ms
+2024-04-29 13:20:07.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-29 13:20:07.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 13:20:07.656 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.8301ms
+2024-04-29 13:20:07.661 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.6249ms
+2024-04-29 13:20:08.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Persons/Index - null null
+2024-04-29 13:20:08.658 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-29 13:20:08.660 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:20:08.662 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-29 13:20:08.670 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 4.4453ms
+2024-04-29 13:20:08.671 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-29 13:20:08.672 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-29 13:20:08.673 +03:00 [ERR] System.InvalidOperationExceptionUnable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+2024-04-29 13:20:08.674 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'ServiceContracts.IPersonsAdderService' while attempting to activate 'CRUDExample.Controllers.PersonsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method41(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at CRUDExample.Middleware.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Middleware\ExceptionHandlingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-29 13:20:08.680 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+2024-04-29 13:20:08.681 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:20:08.682 +03:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2024-04-29 13:20:08.684 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-29 13:20:08.684 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-29 13:20:08.685 +03:00 [INF] Executing ViewResult, running view Error.
+2024-04-29 13:20:08.686 +03:00 [INF] Executed ViewResult - view Error executed in 1.4211ms.
+2024-04-29 13:20:08.689 +03:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 4.7967ms
+2024-04-29 13:20:08.690 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-29 13:20:08.691 +03:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Mon, 29 Apr 2024 10:20:08 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-29 13:20:08.694 +03:00 [ERR] HTTP GET /Persons/Index responded 500 in 36.8367 ms
+2024-04-29 13:20:08.697 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Persons/Index - 500 null text/html; charset=utf-8 44.9945ms
+2024-04-29 13:20:08.702 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-29 13:20:08.707 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 13:20:08.710 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.3955ms
+2024-04-29 13:20:08.711 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.8057ms
