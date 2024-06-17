@@ -183,3 +183,10 @@ C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManage
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

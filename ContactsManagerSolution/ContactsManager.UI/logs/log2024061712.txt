@@ -1,0 +1,59 @@
+2024-06-17 12:48:09.321 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-17 12:48:09.749 +03:00 [INF] Now listening on: http://localhost:5005
+2024-06-17 12:48:12.949 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/ - null null
+2024-06-17 12:48:13.084 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-06-17 12:48:13.135 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-17 12:48:13.192 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-06-17 12:48:13.197 +03:00 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5005/Account/Login?ReturnUrl=%2F
+2024-06-17 12:48:13.201 +03:00 [INF] HTTP GET / responded 302 in 127.2742 ms
+2024-06-17 12:48:13.209 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/ - 302 0 null 270.1642ms
+2024-06-17 12:48:13.214 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2F - null null
+2024-06-17 12:48:13.221 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-06-17 12:48:13.239 +03:00 [INF] Response:
+StatusCode: 200
+2024-06-17 12:48:13.251 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'NotAuthorized' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-17 12:48:13.312 +03:00 [ERR] HTTP GET /Account/Login responded 500 in 90.9583 ms
+2024-06-17 12:48:13.315 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2F - 500 null text/html; charset=utf-8 101.1371ms
+2024-06-17 12:48:13.325 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-17 12:48:13.325 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 12:48:13.332 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.1231ms
+2024-06-17 12:48:13.397 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.4972ms
+2024-06-17 12:48:13.422 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/favicon.ico - null null
+2024-06-17 12:48:13.424 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2024-06-17 12:48:13.449 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.UI\wwwroot\favicon.ico'
+2024-06-17 12:48:13.450 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 17 Jun 2024 09:48:12 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 07 May 2024 15:25:52 GMT
+Content-Length: 5430
+2024-06-17 12:48:13.451 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 27.2934 ms
+2024-06-17 12:48:13.453 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/favicon.ico - 200 5430 image/x-icon 30.5277ms

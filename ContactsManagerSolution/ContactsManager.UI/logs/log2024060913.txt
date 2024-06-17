@@ -1,9 +1,0 @@
-2024-06-09 13:01:29.164 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2024-06-09 13:01:29.350 +03:00 [INF] Now listening on: http://localhost:5005
-2024-06-09 13:01:30.011 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/ - null null
-2024-06-09 13:01:30.097 +03:00 [INF] Request:
-Protocol: HTTP/1.1
-Method: GET
-Scheme: http
-PathBase: 
-Path: /

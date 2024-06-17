@@ -44,6 +44,7 @@ namespace CRUDExample
             services.AddScoped<ICountriesUpdaterService, CountriesUpdaterService>();
             services.AddScoped<ICountriesDeleterService, CountriesDeleterService>();
 
+
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));

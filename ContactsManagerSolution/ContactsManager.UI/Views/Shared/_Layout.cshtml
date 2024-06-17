@@ -34,10 +34,18 @@
                                     <i class="fa-solid fa-user"></i>
                                     @User.Identity?.Name
                                 </li>
+
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Index" asp-area="Admin" class="link-hover">Admin Home</a>
+                                        </li>
+                                    }
+                                    
                                 <li>
                                     <a asp-controller="Account" asp-action="Logout" class="link-hover">Logout</a>
-                                    </li>
-                                }
+                                </li>
+                            }
                                 else
                                 {
                                     @if (ViewBag.CurrentUrl == "~/Account/Register")

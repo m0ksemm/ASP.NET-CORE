@@ -1,0 +1,128 @@
+2024-04-30 00:05:20.826 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-30 00:05:21.289 +03:00 [INF] Now listening on: http://localhost:5175
+2024-04-30 00:05:23.274 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-04-30 00:05:23.476 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-30 00:05:23.500 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-30 00:05:23.576 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-04-30 00:05:23.589 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 8.2786ms
+2024-04-30 00:05:23.592 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-04-30 00:05:23.595 +03:00 [INF] Response:
+StatusCode: 200
+2024-04-30 00:05:23.652 +03:00 [ERR] System.InvalidOperationExceptionA circular dependency was detected for the service of type 'ServiceContracts.IPersonsGetterService'.
+ServiceContracts.IPersonsGetterService(Services.PersonsGetterServiceWithFewExcelFields) -> ServiceContracts.IPersonsGetterService
+2024-04-30 00:05:23.715 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A circular dependency was detected for the service of type 'ServiceContracts.IPersonsGetterService'.
+ServiceContracts.IPersonsGetterService(Services.PersonsGetterServiceWithFewExcelFields) -> ServiceContracts.IPersonsGetterService
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteChain.CheckCircularDependency(ServiceIdentifier serviceIdentifier)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at CRUDExample.Middleware.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\Middleware\ExceptionHandlingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-30 00:05:23.742 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+2024-04-30 00:05:23.743 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-30 00:05:23.746 +03:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2024-04-30 00:05:23.750 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-30 00:05:23.917 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-04-30 00:05:23.932 +03:00 [INF] Executing ViewResult, running view Error.
+2024-04-30 00:05:24.123 +03:00 [INF] Executed ViewResult - view Error executed in 199.6654ms.
+2024-04-30 00:05:24.125 +03:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 377.6708ms
+2024-04-30 00:05:24.127 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2024-04-30 00:05:24.128 +03:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Mon, 29 Apr 2024 21:05:23 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-04-30 00:05:24.133 +03:00 [ERR] HTTP GET / responded 500 in 668.0176 ms
+2024-04-30 00:05:24.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Stylesheet.css - null null
+2024-04-30 00:05:24.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/error.svg - null null
+2024-04-30 00:05:24.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-04-30 00:05:24.157 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Stylesheet.css
+2024-04-30 00:05:24.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 500 null text/html; charset=utf-8 899.2785ms
+2024-04-30 00:05:24.159 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /error.svg
+2024-04-30 00:05:24.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-30 00:05:24.172 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 21.8566ms
+2024-04-30 00:05:24.221 +03:00 [INF] Sending file. Request path: '/error.svg'. Physical path: 'C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\wwwroot\error.svg'
+2024-04-30 00:05:24.221 +03:00 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\CRUDExample\CRUDExample\wwwroot\Stylesheet.css'
+2024-04-30 00:05:24.224 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: image/svg+xml
+Date: Mon, 29 Apr 2024 21:05:24 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sun, 28 Apr 2024 22:02:21 GMT
+Content-Length: 11753
+2024-04-30 00:05:24.225 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 29 Apr 2024 21:05:24 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 25 Apr 2024 22:46:45 GMT
+Content-Length: 11903
+2024-04-30 00:05:24.227 +03:00 [INF] HTTP GET /error.svg responded 200 in 68.1680 ms
+2024-04-30 00:05:24.227 +03:00 [INF] HTTP GET /Stylesheet.css responded 200 in 70.2246 ms
+2024-04-30 00:05:24.230 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/error.svg - 200 11753 image/svg+xml 82.7506ms
+2024-04-30 00:05:24.231 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Stylesheet.css - 200 11903 text/css 83.6864ms
+2024-04-30 00:05:24.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.209ms
+2024-04-30 00:05:24.297 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2024-04-30 00:05:24.299 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2024-04-30 00:05:24.303 +03:00 [INF] Response:
+StatusCode: 404
+2024-04-30 00:05:24.303 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 4.2668 ms
+2024-04-30 00:05:24.305 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 404 0 null 7.823ms
+2024-04-30 00:05:24.308 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/favicon.ico, Response status code: 404

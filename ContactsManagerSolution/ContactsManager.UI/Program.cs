@@ -36,6 +36,8 @@ else
     app.UseExceptionHandlingMiddleware();
 }
 
+app.UseHsts();
+app.UseHttpsRedirection();
 app.UseHttpLogging();
 
 //app.Logger.LogDebug("debug-message");
@@ -57,6 +59,11 @@ app.MapControllers(); //Execute the filter pipeline (action + filters)
 
 app.UseEndpoints(endpoints =>
 {
+    endpoints.MapControllerRoute(name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}");
+    //Admin/Home/Index
+    //Admin
+
     endpoints.MapControllerRoute(
         name: "default", 
         pattern: "{controller}/{action}/{id?}"

@@ -1,0 +1,427 @@
+2024-06-12 17:24:21.744 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 17:24:21.754 +03:00 [INF] Hosting environment: Development
+2024-06-12 17:24:21.757 +03:00 [INF] Content root path: C:\Users\mdche\OneDrive\Рабочий стол\Prog\ASP.NET-CORE\ContactsManagerSolution\ContactsManager.UI
+2024-06-12 17:28:55.405 +03:00 [INF] User profile is available. Using 'C:\Users\mdche\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-12 17:28:55.594 +03:00 [INF] Now listening on: http://localhost:5005
+2024-06-12 17:28:56.073 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/ - null null
+2024-06-12 17:28:56.202 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-06-12 17:28:56.565 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:28:56.656 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2024-06-12 17:28:56.720 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:28:56.723 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:28:56.724 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:28:56.726 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-06-12 17:28:56.730 +03:00 [INF] Index action method of PersonsController
+2024-06-12 17:28:56.739 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-06-12 17:28:56.743 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-06-12 17:28:58.609 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-06-12 17:28:58.783 +03:00 [INF] Time for Filtered Persons from Database completed in 2040.3 ms
+2024-06-12 17:28:58.802 +03:00 [INF] GetSortedPersons of PersonsService
+2024-06-12 17:28:58.816 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-06-12 17:28:58.864 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:28:58.866 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:28:58.869 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:28:58.875 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-06-12 17:28:58.892 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-12 17:28:59.239 +03:00 [INF] Executed ViewResult - view Index executed in 354.4777ms.
+2024-06-12 17:28:59.243 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-06-12 17:28:59.251 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 2583.1859ms
+2024-06-12 17:28:59.259 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-12 17:28:59.259 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-12 17:28:59.259 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:28:59.269 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 8.1626ms
+2024-06-12 17:28:59.273 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:28:58 GMT
+Server: Kestrel
+Last-Modified: 2024-06-12 17:28
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-06-12 17:28:59.303 +03:00 [INF] HTTP GET / responded 200 in 3112.1844 ms
+2024-06-12 17:28:59.329 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/ - 200 null text/html; charset=utf-8 3264.5111ms
+2024-06-12 17:28:59.343 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.83ms
+2024-06-12 17:29:01.957 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Account/Logout - null null
+2024-06-12 17:29:01.965 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Logout
+2024-06-12 17:29:01.976 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2024-06-12 17:29:01.984 +03:00 [INF] Route matched with {action = "Logout", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:01.988 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:01.996 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-06-12 17:29:02.000 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-06-12 17:29:02.002 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-06-12 17:29:02.003 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:02.006 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-06-12 17:29:02.008 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI) in 20.8622ms
+2024-06-12 17:29:02.009 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2024-06-12 17:29:02.011 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:02.012 +03:00 [INF] HTTP GET /Account/Logout responded 302 in 47.0518 ms
+2024-06-12 17:29:02.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Account/Logout - 302 0 null 57.4131ms
+2024-06-12 17:29:02.018 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Persons/Index - null null
+2024-06-12 17:29:02.022 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-06-12 17:29:02.028 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-12 17:29:02.031 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-06-12 17:29:02.033 +03:00 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-06-12 17:29:02.033 +03:00 [INF] HTTP GET /Persons/Index responded 302 in 11.4250 ms
+2024-06-12 17:29:02.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Persons/Index - 302 0 null 18.2592ms
+2024-06-12 17:29:02.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - null null
+2024-06-12 17:29:02.042 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-06-12 17:29:02.045 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:02.048 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:02.052 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:02.053 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:02.055 +03:00 [INF] Executing ViewResult, running view Login.
+2024-06-12 17:29:02.116 +03:00 [INF] Executed ViewResult - view Login executed in 61.4378ms.
+2024-06-12 17:29:02.117 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 67.7671ms
+2024-06-12 17:29:02.119 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:02.122 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:29:01 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:02.124 +03:00 [INF] HTTP GET /Account/Login responded 200 in 82.0063 ms
+2024-06-12 17:29:02.127 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - 200 null text/html; charset=utf-8 88.4036ms
+2024-06-12 17:29:02.135 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-12 17:29:02.136 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-12 17:29:02.138 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 3.5912ms
+2024-06-12 17:29:02.168 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.357ms
+2024-06-12 17:29:09.422 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - application/x-www-form-urlencoded 229
+2024-06-12 17:29:09.428 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-06-12 17:29:09.431 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:09.439 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ContactsManager.Core.DTO.LoginDTO, System.String) on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:09.486 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:09.589 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-12 17:29:09.810 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-06-12 17:29:09.836 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-06-12 17:29:09.846 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-06-12 17:29:09.859 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-06-12 17:29:09.876 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-06-12 17:29:09.909 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2024-06-12 17:29:09.912 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:09.914 +03:00 [INF] Executing LocalRedirectResult, redirecting to /Persons/Index.
+2024-06-12 17:29:09.915 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 474.8098ms
+2024-06-12 17:29:09.917 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:09.919 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:09.919 +03:00 [INF] HTTP POST /Account/Login responded 302 in 490.9743 ms
+2024-06-12 17:29:09.921 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - 302 0 null 498.8885ms
+2024-06-12 17:29:09.924 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Persons/Index - null null
+2024-06-12 17:29:09.927 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-06-12 17:29:09.931 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:29:09.936 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2024-06-12 17:29:09.939 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:09.940 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:09.941 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:09.942 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-06-12 17:29:09.943 +03:00 [INF] Index action method of PersonsController
+2024-06-12 17:29:09.943 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-06-12 17:29:09.944 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-06-12 17:29:10.017 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-06-12 17:29:10.021 +03:00 [INF] Time for Filtered Persons from Database completed in 77.1 ms
+2024-06-12 17:29:10.022 +03:00 [INF] GetSortedPersons of PersonsService
+2024-06-12 17:29:10.023 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-06-12 17:29:10.025 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:10.026 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:10.026 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:10.028 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-06-12 17:29:10.029 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-12 17:29:10.035 +03:00 [INF] Executed ViewResult - view Index executed in 6.6336ms.
+2024-06-12 17:29:10.036 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-06-12 17:29:10.038 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 100.3029ms
+2024-06-12 17:29:10.039 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:29:10.040 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:29:09 GMT
+Server: Kestrel
+Last-Modified: 2024-06-12 17:29
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-06-12 17:29:10.041 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 113.9017 ms
+2024-06-12 17:29:10.044 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Persons/Index - 200 null text/html; charset=utf-8 120.1308ms
+2024-06-12 17:29:10.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-12 17:29:10.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-12 17:29:10.062 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 2.5688ms
+2024-06-12 17:29:10.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.1535ms
+2024-06-12 17:29:12.753 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Account/Logout - null null
+2024-06-12 17:29:12.761 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Logout
+2024-06-12 17:29:12.765 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2024-06-12 17:29:12.766 +03:00 [INF] Route matched with {action = "Logout", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:12.770 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:12.771 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-06-12 17:29:12.773 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-06-12 17:29:12.774 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-06-12 17:29:12.775 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:12.776 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-06-12 17:29:12.778 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI) in 8.3534ms
+2024-06-12 17:29:12.778 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2024-06-12 17:29:12.780 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:12.781 +03:00 [INF] HTTP GET /Account/Logout responded 302 in 20.5206 ms
+2024-06-12 17:29:12.783 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Account/Logout - 302 0 null 29.6127ms
+2024-06-12 17:29:12.785 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Persons/Index - null null
+2024-06-12 17:29:12.789 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-06-12 17:29:12.791 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-12 17:29:12.792 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-06-12 17:29:12.794 +03:00 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-06-12 17:29:12.795 +03:00 [INF] HTTP GET /Persons/Index responded 302 in 5.9186 ms
+2024-06-12 17:29:12.800 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Persons/Index - 302 0 null 14.6381ms
+2024-06-12 17:29:12.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - null null
+2024-06-12 17:29:12.812 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-06-12 17:29:12.813 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:12.814 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:12.816 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:12.817 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:12.820 +03:00 [INF] Executing ViewResult, running view Login.
+2024-06-12 17:29:12.830 +03:00 [INF] Executed ViewResult - view Login executed in 10.296ms.
+2024-06-12 17:29:12.834 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 18.0448ms
+2024-06-12 17:29:12.839 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:12.841 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:29:12 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:12.841 +03:00 [INF] HTTP GET /Account/Login responded 200 in 29.8759 ms
+2024-06-12 17:29:12.843 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - 200 null text/html; charset=utf-8 39.0902ms
+2024-06-12 17:29:12.851 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-12 17:29:12.853 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-12 17:29:12.855 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.2869ms
+2024-06-12 17:29:12.871 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4839ms
+2024-06-12 17:29:19.450 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - application/x-www-form-urlencoded 233
+2024-06-12 17:29:19.456 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-06-12 17:29:19.457 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:19.458 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ContactsManager.Core.DTO.LoginDTO, System.String) on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2024-06-12 17:29:19.465 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:19.474 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-12 17:29:19.587 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-06-12 17:29:19.592 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-06-12 17:29:19.609 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-06-12 17:29:19.622 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-06-12 17:29:19.626 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-06-12 17:29:19.630 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-06-12 17:29:19.635 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-06-12 17:29:19.640 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2024-06-12 17:29:19.655 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:19.658 +03:00 [INF] Executing RedirectResult, redirecting to /admin/home/index.
+2024-06-12 17:29:19.659 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 199.1516ms
+2024-06-12 17:29:19.661 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2024-06-12 17:29:19.662 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /admin/home/index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:19.662 +03:00 [INF] HTTP POST /Account/Login responded 302 in 206.8485 ms
+2024-06-12 17:29:19.665 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5005/Account/Login?ReturnUrl=%2FPersons%2FIndex - 302 0 null 214.9821ms
+2024-06-12 17:29:19.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/admin/home/index - null null
+2024-06-12 17:29:19.670 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /admin/home/index
+2024-06-12 17:29:19.672 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI)'
+2024-06-12 17:29:19.674 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactsManager.UI.Areas.Admin.Controllers.HomeController (ContactsManager.UI).
+2024-06-12 17:29:19.676 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:19.677 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:19.678 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-12 17:29:19.682 +03:00 [INF] Executed ViewResult - view Index executed in 4.1637ms.
+2024-06-12 17:29:19.683 +03:00 [INF] Executed action ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI) in 7.45ms
+2024-06-12 17:29:19.684 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI)'
+2024-06-12 17:29:19.685 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:29:18 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+2024-06-12 17:29:19.687 +03:00 [INF] HTTP GET /admin/home/index responded 200 in 15.8825 ms
+2024-06-12 17:29:19.693 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2024-06-12 17:29:19.694 +03:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-06-12 17:29:19.696 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/admin/home/index - 200 null text/html; charset=utf-8 28.8188ms
+2024-06-12 17:29:21.820 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/Persons/Index - null null
+2024-06-12 17:29:21.825 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-06-12 17:29:21.826 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:29:21.828 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2024-06-12 17:29:21.836 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.837 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.837 +03:00 [INF] Before logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.838 +03:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-06-12 17:29:21.839 +03:00 [INF] Index action method of PersonsController
+2024-06-12 17:29:21.840 +03:00 [INF] GetFilteredPersons of PersonsService
+2024-06-12 17:29:21.840 +03:00 [INF] GetAllPersons of PersonsRepository
+2024-06-12 17:29:21.845 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-06-12 17:29:21.848 +03:00 [INF] Time for Filtered Persons from Database completed in 8.1 ms
+2024-06-12 17:29:21.850 +03:00 [INF] GetSortedPersons of PersonsService
+2024-06-12 17:29:21.851 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-06-12 17:29:21.852 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.853 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.853 +03:00 [INF] After logic - ResponseHeaderActionFilter
+2024-06-12 17:29:21.854 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-06-12 17:29:21.855 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-12 17:29:21.858 +03:00 [INF] Executed ViewResult - view Index executed in 3.6044ms.
+2024-06-12 17:29:21.860 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-06-12 17:29:21.861 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 31.6442ms
+2024-06-12 17:29:21.862 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-06-12 17:29:21.865 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Jun 2024 14:29:21 GMT
+Server: Kestrel
+Last-Modified: 2024-06-12 17:29
+Transfer-Encoding: chunked
+Me-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-06-12 17:29:21.866 +03:00 [INF] HTTP GET /Persons/Index responded 200 in 41.1605 ms
+2024-06-12 17:29:21.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/Persons/Index - 200 null text/html; charset=utf-8 48.6526ms
+2024-06-12 17:29:21.876 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2024-06-12 17:29:21.878 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-12 17:29:21.882 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.1763ms
+2024-06-12 17:29:21.887 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.4023ms
