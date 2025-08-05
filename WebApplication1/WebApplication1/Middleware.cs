@@ -12,6 +12,8 @@ namespace WebApplication1
         public Middleware(RequestDelegate next)
         {
             _next = next;
+            int i = 0+11212;
+            Console.WriteLine(i);
         }
 
         public Task Invoke(HttpContext httpContext)
